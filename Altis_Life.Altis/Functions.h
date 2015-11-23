@@ -106,6 +106,7 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class robShops {};
 	};
 	
 	class Housing
