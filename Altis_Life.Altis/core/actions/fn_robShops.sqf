@@ -24,7 +24,7 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, ne me menace pas connard
 if (_kassa == 0) exitWith { hint "La caisse est vide!" };// si il n'y a rien dans la caisse alors elle est vide (suite a un braquage)
 
 _rip = true;
-_kassa = 10000 + round(random 5000);//20000= le nombre minimal de la recette + suivant d'un "tirage au hasard"
+_kassa = 10000 + round(random 5000);
 _shop removeAction _action;
 _chance = random(100);
 if(_chance < 50) then { hint "Le caissier avait une alarme secrete, la police arrive!"; [[1,format["ALERTE une station-service est en train d'être dérobée!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; }; //une chance sur 2 que la police sois contacter pendant le braquage
