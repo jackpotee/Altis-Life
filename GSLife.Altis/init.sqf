@@ -30,9 +30,11 @@ if(isDedicated && isNil("life_market_prices")) then
 //////////////////////////////////////////////////////
 //////// SCRIPTS AJOUTE GS  //////////////
 //////////////////////////////////////////////////////
+
 [] execVM "core\functions\fn_emptyFuel.sqf";
-//[] execVM "scripts\bardestatut.sqf";
 [] execVM "scripts\statusBar\statusBar.sqf";
+call compile preProcessFileLineNumbers "scripts\cmEarplugs\config.sqf";
+
 //////////////////////////////////////////////////////
 
 
