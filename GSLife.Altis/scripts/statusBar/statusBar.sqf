@@ -50,13 +50,13 @@ disableSerialization;
 				
 		//moved the creation of the status bar inside the loop and create it if it is null,
 		//this is to handle instance where the status bar is disappearing 
-		if(isNull ((uiNamespace getVariable "osefStatusBarAdmin")displayCtrl 55554)) then
+		/* if(isNull ((uiNamespace getVariable "osefStatusBarAdmin")displayCtrl 55554)) then
 		{
 			diag_log "statusbar is null create";
 			disableSerialization;
 			_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
 			_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
-		};		
+		};	*/	
 		
 		//initialize variables and set values
 		_unit = _this select 0;
@@ -71,7 +71,7 @@ disableSerialization;
 		_dir = round (getDir (vehicle player));
 		_grid = mapGridPosition  player; _xx = (format[_grid]) select  [0,3]; 
 		_yy = (format[_grid]) select  [3,3];  
-		_time = (round(360-(serverTime)/60));  //edit the '240' value (60*4=240) to change the countdown timer if your server restarts are shorter or longer than 4 hour intervals
+		_time = (round(240-(serverTime)/60));  //edit the '240' value (60*4=240) to change the countdown timer if your server restarts are shorter or longer than 4 hour intervals
 		_hours = (floor(_time/60));
 		_minutes = (_time - (_hours * 60));
 		

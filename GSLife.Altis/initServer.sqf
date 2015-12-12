@@ -25,3 +25,6 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 } foreach ["hospital_2","hospital_3"];
 
 [8,true,true,12] execFSM "core\fsm\timeModule.fsm";
+
+//Mapping
+[] execVM "scripts\Mapping\Altis_Market.sqf";

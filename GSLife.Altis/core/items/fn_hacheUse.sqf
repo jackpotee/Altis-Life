@@ -7,8 +7,6 @@
 */
 closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
-player say3D "couperbois";
-player say3D "couperbois";
 switch (true) do
 {
 	case (player distance (getMarkerPos "bois_1") < 40): {_mine = "bois"; _val = 2;};
@@ -24,6 +22,7 @@ life_action_inUse = true;
 for "_i" from 0 to 2 do
 {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	player say3D "couperbois";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
 	sleep 2.5;
 };

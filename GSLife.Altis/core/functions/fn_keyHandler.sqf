@@ -294,7 +294,7 @@ switch (_code) do
 		};
 	};
 	
-//U Key + shift				//Tout les minages
+//C Key + shift				//Tout les minages
     case 46:
     {    
         if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
@@ -308,22 +308,7 @@ switch (_code) do
                     {
                         [] spawn life_fnc_pickAxeUse;
                     };
-                };
-            } foreach life_inv_items;
-        }
-    };
-	
-	//C Key + shift			//Couper du bois
-    case 46:
-    {    
-        if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
-        {
-            {
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Hache" || _str == "hache" ) then
+					if( _str == "Hache" || _str == "hache" ) then
                     {
                         [] spawn life_fnc_hacheUse;
                     };

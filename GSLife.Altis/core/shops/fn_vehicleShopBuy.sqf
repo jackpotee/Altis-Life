@@ -11,7 +11,7 @@ if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
- if(_mode) then {_basePrice = round(_basePrice * 1.5)};
+ if(_mode) then {_basePrice = round(_basePrice * 5)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
@@ -91,7 +91,7 @@ life_vehicles pushBack _vehicle;
 [[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
 if(_mode) then {
-	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
+	if(!(_className in ["B_MRAP_01_hmg_F"])) then {
 		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 	};
 };

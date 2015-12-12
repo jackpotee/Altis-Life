@@ -87,6 +87,10 @@ class Life_RscListNBox
 	autoScrollSpeed = -1;
 	autoScrollDelay = 5;
 	autoScrollRewind = 0;
+	rowHeight = 0.04;
+	drawSideArrows = 0;
+	idcLeft = -1;
+	idcRight = -1;
 	class ListScrollBar: Life_RscScrollBar{};
 	class ScrollBar: Life_RscScrollBar{};
 };
@@ -441,6 +445,21 @@ class Life_RscShortcutButtonMain : Life_RscShortcutButton {
 		color = "#E5E5E5";
 		align = "false";
 	};
+};
+
+class Life_RscButtonInvisibleByVoxid : Life_RscButtonMenu {
+	animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+	animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+	animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+	animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+	animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+	colorBackground[] = {0, 0, 0, 0};
+	colorBackground2[] = {1, 1, 1, 0};
+	color[] = {1, 1, 1, 0};
+	color2[] = {1, 1, 1, 0};
+	colorText[] = {1, 1, 1, 0};
+	colorDisabled[] = {1, 1, 1, 0};
 };
 
 class Life_RscCheckbox {

@@ -47,7 +47,7 @@ while {true} do
 player playActionNow "stop";
 if(!alive player) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
-_ui = "StatusBar" call BIS_fnc_rscLayer;_ui cutRsc["StatusBar","PLAIN"];
+_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBarAdmin","PLAIN"];
 life_action_inUse = false;
 _vault setVariable["chargeplaced",false,true];
 [[0,"STR_ISTR_Defuse_Success"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;

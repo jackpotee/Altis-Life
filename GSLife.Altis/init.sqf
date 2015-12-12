@@ -15,16 +15,16 @@ life_versionInfo = "Altis Life RPG v3.1.4.8";
 if(isDedicated && isNil("life_market_prices")) then
 {
 	[] call life_fnc_marketconfiguration;
-	diag_log "Market prices generated!";
+	diag_log "Les prix de la bourse ont été généré!";
  
 	"life_market_prices" addPublicVariableEventHandler
 	{
-	diag_log format["Market prices updated! %1", _this select 1];
+	diag_log format["Les prix de la bourse ont été mis à jour %1", _this select 1];
 	};
  
 	//Start server fsm
 	[] execFSM "core\fsm\server.fsm";
-	diag_log "Server FSM executed";
+	diag_log "Server FSM executé";
 };
 
 //////////////////////////////////////////////////////
@@ -34,6 +34,7 @@ if(isDedicated && isNil("life_market_prices")) then
 [] execVM "core\functions\fn_emptyFuel.sqf";
 [] execVM "scripts\statusBar\statusBar.sqf";
 call compile preProcessFileLineNumbers "scripts\cmEarplugs\config.sqf";
+[] execVM "scripts\playermarker.sqf";
 
 //////////////////////////////////////////////////////
 

@@ -47,11 +47,16 @@ switch (typeOf _building) do {
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-	};
-	sleep 0.26;
+	if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then 
+			{
+				player action ["SwitchWeapon", player, player, 100];
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";		//Durée action 6.5 secondes
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+			};
+			sleep 0.195;		// 3 fois 6.5 secondes = 19,5secondes
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -72,7 +77,7 @@ player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
-_ui = "StatusBar" call BIS_fnc_rscLayer;_ui cutRsc["StatusBar","PLAIN"];
+_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBarAdmin","PLAIN"];
 life_boltcutter_uses = life_boltcutter_uses + 1;
 life_action_inUse = false;
 if(life_boltcutter_uses >= 5) then {

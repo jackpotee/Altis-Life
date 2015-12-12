@@ -42,7 +42,7 @@ __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be ab
 __CONST__(life_revive_fee,250); //Fee for players to pay when revived.
 
 //House Limit
-__CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
+__CONST__(life_houseLimit,3); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
 __CONST__(life_gangPrice,300000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
@@ -77,7 +77,7 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,5); //Five minutes
+__CONST__(life_paycheck_period,60); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
@@ -92,17 +92,17 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 20000; //Starting Bank Money
-		life_paycheck = 1700; //Paycheck Amount
+		life_paycheck = 25; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 450; //Paycheck Amount
+		life_paycheck = 0; //Paycheck Amount
 	};
 	
 	case independent: {
 		life_atmcash = 15000;
-		life_paycheck = 1200;
+		life_paycheck = 250;
 	};
 };
 
@@ -234,93 +234,93 @@ life_illegal_items = [["heroinu",1200],["heroinp",5500],["cocaine",1500],["cocai
 */
 sell_array = 
 [
-	["apple",50],
-	["heroinu",1850],
-	["heroinp",5500],
-	["salema",45],
-	["ornate",40],
-	["mackerel",175],
-	["tuna",700],
-	["mullet",250],
-	["catshark",300],
-	["rabbit",65],
-	["oilp",3200],
-	["turtle",5500],
-	["water",5],
-	["coffee",5],
-	["turtlesoup",1000],
-	["donuts",60],
-	["marijuana",3750],
-	["tbacon",25],
-	["lockpick",75],
-	["hache",750],
-	["pickaxe",750],
-	["redgull",200],
-	["peach",55],
-	["cocaine",3000],
-	["cocainep",7600],
-	["diamond",750],
-	["diamondc",2300],
-	["iron_r",3200],
-	["copper_r",1500],
-	["salt_r",1650],
-	["glass",1450],
-	["fuelF",500],
+	["apple",3],
+	["heroinu",300],
+	["heroinp",500],
+	["salema",20],
+	["ornate",17],
+	["mackerel",35],
+	["tuna",177],
+	["mullet",55],
+	["catshark",60],
+	["rabbit",8],
+	["oilp",350],
+	["turtle",750],
+	["water",1],
+	["coffee",2],
+	["turtlesoup",200],
+	["donuts",5],
+	["marijuana",150],
+	["tbacon",8],
+	["lockpick",1000],
+	["hache",30],
+	["pickaxe",30],
+	["redgull",2],
+	["peach",3],
+	["cocaine",450],
+	["cocainep",800],
+	["diamond",275],
+	["diamondc",500],
+	["iron_r",275],
+	["copper_r",135],
+	["salt_r",130],
+	["glass",130],
+	["fuelF",150],
 	// Battery
-	["battery",450],
-	["piecea",750],
-	["spikeStrip",1200],
-	["cement",1950],
-	["goldbar",75000],
-	["methu",400],
-	["methp",4500],
-	["lsdu",250],
-	["lsdp",3500],
-	["tabacu",25],
-	["tabacp",120],
-	["raisinu",45],
-	["raisinp",900],
-	["raisina",3150],
-	["bois",500],
-	["bois_r",1750],
-	["kidney",50000],
+	["battery",15],
+	["piecea",170],
+	["spikeStrip",20],
+	["cement",65],
+	["goldbar",32000],
+	["methu",62],
+	["methp",650],
+	["lsdu",50],
+	["lsdp",500],
+	["tabacu",5],
+	["tabacp",75],
+	["raisinu",5],
+	["raisinp",100],
+	["raisina",450],
+	["bois",66],
+	["bois_r",200],
+	["kidney",5000],
 	["scalpel",2500]
 ];
 __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",65],
-	["rabbit",75],
+	["apple",3],
+	["rabbit",8],
 	["salema",55],
 	["ornate",50],
-	["mackerel",200],
-	["tuna",900],
-	["mullet",300],
-	["catshark",350],
-	["water",10],
-	["turtle",4000],
-	["turtlesoup",30],
-	["donuts",20],
-	["coffee",10],
-	["tbacon",75],
-	["lockpick",1500],
+	["mackerel",66],
+	["tuna",200],
+	["mullet",70],
+	["catshark",80],
+	["water",1],
+	["turtle",820],
+	["turtlesoup",225],
+	["donuts",5],
+	["coffee",2],
+	["tbacon",8],
+	["lockpick",1000],
 	// Battery
-	["battery",750],
-	["pickaxe",1200],
-	["hache",1200],
-	["redgull",1500],
-	["fuelF",850],
-	["peach",68],
-	["spikeStrip",2500],
-	["blastingcharge",35000],
-	["boltcutter",7500],
-	["defusekit",2500],
-	["storagesmall",250000],
-	["storagebig",600000],
-	["kidney",100000],
-	["scalpel",5000],
-	["gpstracker",12000]
+	["battery",15],
+	["pickaxe",30],
+	["hache",30],
+	["redgull",3],
+	["fuelF",50],
+	["peach",3],
+	["spikeStrip",20],
+	["blastingcharge",15000],
+	["boltcutter",2500],
+	["defusekit",25],
+	["storagesmall",300],
+	["storagebig",600],
+	["kidney",5000],
+	["scalpel",20000],
+	["gpstracker",20]
 ];
 __CONST__(buy_array,buy_array);
 
@@ -369,40 +369,7 @@ life_weapon_shop_array =
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
-life_garage_prices =
-[
-	//Véhicule civil
-	["B_QuadBike_01_F",550],
-	["C_Hatchback_01_F",1500],
-	["C_Offroad_01_F", 2500],
-	["B_G_Offroad_01_F",3500],
-	["C_SUV_01_F",5250],
-	["C_Van_01_transport_F",7890],
-	["C_Hatchback_01_sport_F",2350],
-	["C_Van_01_fuel_F",4500],
-	["I_Heli_Transport_02_F",20000],
-	["C_Van_01_box_F",9000],
-	["I_Truck_02_transport_F",12000],
-	["I_Truck_02_covered_F",14500],
-	["B_Truck_01_transport_F",15650],
-	["B_Truck_01_box_F", 20000],
-	["O_MRAP_02_F",25000],
-	["B_Heli_Light_01_F",45000],
-	["O_Heli_Light_02_unarmed_F",65000],
-	["C_Rubberboat",400],
-	["C_Boat_Civil_01_F",4500],
-	["B_Boat_Transport_01_F",450],
-	["C_Boat_Civil_01_police_F",3500],
-	["B_Boat_Armed_01_minigun_F",16500],
-	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500],
-	//Vehicule rebelle ajoutés
-	["O_MRAP_02_hmg_F",35000],
-	["B_Heli_Light_01_armed_F",95000],
-	["O_MRAP_02_gmg_F",50000],
-	["O_Heli_Attack_02_F",110000],
-	["O_Plane_CAS_02_F",175000]
-];
+life_garage_prices = [];
 __CONST__(life_garage_prices,life_garage_prices);
 
 life_garage_sell =

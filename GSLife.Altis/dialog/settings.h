@@ -26,7 +26,7 @@ class SettingsMenu
 			w = 0.5;
 			h = 0.43 - (22 / 250);
 		};
-		
+		/*
 		class PlayerTagsHeader : Life_RscText
 		{
 			idc = -1;
@@ -54,7 +54,7 @@ class SettingsMenu
 			text = "Reveal Nearest Objects";
 			colorBackground[] = {0,0.3294117647058824,0.5411764705882353,1};
 			y = 0.53;
-		};
+		};*/
 		
 		class Title : life_RscTitle
 		{
@@ -162,7 +162,7 @@ class SettingsMenu
 			x = 0.70; y = 0.36;
 			w = 0.275; h = 0.04;
 		};
-		
+		/*
 		class PlayerTagsONOFF : Life_RscActiveText
 		{
 			text = "ON";
@@ -189,7 +189,7 @@ class SettingsMenu
 			idc = 2972;
 			y = 0.53;
 		};
-		
+		*/
 		class ButtonClose : life_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};

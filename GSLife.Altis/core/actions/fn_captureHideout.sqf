@@ -42,11 +42,17 @@ _cP = 0.01;
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-	};
-	sleep 0.26;
+	if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then 
+			{
+				player action ["SwitchWeapon", player, player, 100];
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";		//Durée action 6.5 secondes
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+			};
+			sleep 0.195;		// 3 fois 6.5 secondes = 19,5secondes
+			
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -82,7 +88,7 @@ _flagTexture = [
 		"\A3\Data_F\Flags\flag_fd_orange_CO.paa"
 	] call BIS_fnc_selectRandom;
 _this select 0 setFlagTexture _flagTexture;
-[[[0,1],"STR_GNOTF_CaptureSuccess",true,[name player,(group player) getVariable "gang_name"]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+[[[0,1],format[localize "STR_GNOTF_CaptureSuccess",name player,(group player) getVariable "gang_name" ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 _hideout setVariable["inCapture",false,true];
 _hideout setVariable["gangOwner",grpPlayer,true];
-_ui = "StatusBar" call BIS_fnc_rscLayer;_ui cutRsc["StatusBar","PLAIN"];
+_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBarAdmin","PLAIN"];

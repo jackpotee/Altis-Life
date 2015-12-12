@@ -68,5 +68,4 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 };
 life_action_inUse = false;
-_rscLayer = "StatusBar" call BIS_fnc_rscLayer;
-_rscLayer cutRsc["StatusBar","PLAIN"];
+_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBarAdmin","PLAIN"];

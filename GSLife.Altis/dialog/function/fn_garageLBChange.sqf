@@ -20,7 +20,7 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
 _retrievePrice = [_className,__GETC__(life_garage_prices)] call TON_fnc_index;
 _sellPrice = [_className,__GETC__(life_garage_sell)] call TON_fnc_index;
-_retrievePrice = if(_retrievePrice == -1) then {1000} else {(__GETC__(life_garage_prices) select _retrievePrice) select 1;};
+_retrievePrice = if(_retrievePrice == -1) then {0} else {(__GETC__(life_garage_prices) select _retrievePrice) select 1;};
 _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) select _sellPrice) select 1;};
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[

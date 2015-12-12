@@ -70,6 +70,7 @@ life_is_processing = true;
 
 if(_hasLicense) then
 {
+	
 	while{true} do
 	{
 		sleep  0.3;
@@ -86,11 +87,12 @@ if(_hasLicense) then
 	5 cutText ["","PLAIN"];
 	titleText[format[localize "STR_Process_Processed",_oldVal,_olditemName,_itemName],"PLAIN"];
 	life_is_processing = false;
+	_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
+	_ui cutRsc["osefStatusBarAdmin","PLAIN"];
 }
 	else
 {
 	if(life_cash < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	
 	while{true} do
 	{
 		sleep  0.9;
@@ -109,5 +111,6 @@ if(_hasLicense) then
 	titleText[format[localize "STR_Process_Processed2",_oldVal,_olditemName,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash - _cost;
 	life_is_processing = false;
-	_ui = "StatusBar" call BIS_fnc_rscLayer;_ui cutRsc["StatusBar","PLAIN"];
+	_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
+	_ui cutRsc["osefStatusBarAdmin","PLAIN"];
 };	

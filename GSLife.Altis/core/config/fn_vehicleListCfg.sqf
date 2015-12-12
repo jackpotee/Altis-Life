@@ -42,33 +42,33 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["B_Quadbike_01_F",1750],
-			["exxpensive_2cv_base",5000],
-			["cl3_lada_white", 7750],
-			["cl3_lada_red", 7750],
-			["LandRover_TK_CIV_EP1",8500],	
-			["cl3_golf_mk2_blue", 12050],
-			["cl3_golf_mk2_black", 12050],
-			["cl3_golf_mk2_yellow", 12050],
-			["cl3_golf_mk2_white", 12050],
-			["cl3_golf_mk2_red", 12050],
-			["cl3_civic_vti_red", 16500],
-			["cl3_civic_vti_black", 16500],
-			["cl3_civic_vti_white", 16500],
-			["exxpensive_m5_e34_base",17000],
-			["exxpensive_BMWM3E46_base",20000],
-			["SAL_AudiCivRed", 22500],
-			["SAL_AudiCivSilver", 22500],
-			["SAL_AudiCivBlack", 22500],
-			["cl3_insignia_white", 33120],
-			["cl3_insignia_black", 33120],
-			["cl3_insignia_silver", 33120],
-			["cl3_range_rover_black", 37100],
-			["cl3_range_rover_white", 37100],
-			["cl3_taurus_black", 45500],
-			["cl3_taurus_yellow", 45500],
-			["cl3_taurus_orange", 45500],
-			["cl3_taurus_white", 45500]
+			["B_Quadbike_01_F",500],
+			["exxpensive_2cv_base",700],
+			["cl3_lada_white", 800],
+			["cl3_lada_red", 800],
+			["LandRover_TK_CIV_EP1",1500],	
+			["cl3_golf_mk2_blue", 2400],
+			["cl3_golf_mk2_black", 2400],
+			["cl3_golf_mk2_yellow", 2400],
+			["cl3_golf_mk2_white", 2400],
+			["cl3_golf_mk2_red", 2400],
+			["cl3_civic_vti_red", 2750],
+			["cl3_civic_vti_black", 2750],
+			["cl3_civic_vti_white", 2750],
+			["exxpensive_m5_e34_base",3600],
+			["exxpensive_BMWM3E46_base",4000],
+			["SAL_AudiCivRed", 4400],
+			["SAL_AudiCivSilver", 4400],
+			["SAL_AudiCivBlack", 4400],
+			["cl3_insignia_white", 5091],
+			["cl3_insignia_black", 5091],
+			["cl3_insignia_silver", 5091],
+			["cl3_range_rover_black", 6400],
+			["cl3_range_rover_white", 6400],
+			["cl3_taurus_black", 5440],
+			["cl3_taurus_yellow", 5440],
+			["cl3_taurus_orange", 5440],
+			["cl3_taurus_white", 5440]
 		];
 	};
 	
@@ -76,31 +76,31 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["exxpensive_chrysler_300c_base",95000],
-			["exxpensive_Audi_q7_base",125000],
-			["cl3_e63_amg_black", 135000],
-			["cl3_e63_amg_red", 135000],
-			["cl3_e63_amg_white", 135000],
-			["cl3_e63_amg_silver", 135000],
-			["cl3_dbs_volante_yellow", 220000],
-			["cl3_dbs_volante_burgundy", 220000],
-			["cl3_dbs_volante_red", 220000],
-			["cl3_dbs_volante_white", 220000],
-			["cl3_dbs_volante_black", 220000],
-			["exxpensive_porsche_panamera_base",250000],
-			["exxpensive_mercedes_sls_base",260000],
-			["exxpensive_jaguar_base",270000],
-			["cl3_carrera_gt_babyblue", 350400],
-			["cl3_carrera_gt_white", 350400],
-			["cl3_carrera_gt_orange", 350400],
-			["cl3_carrera_gt_black", 350400],
-			["cl3_carrera_gt_red", 350400],
-			["cl3_458_flame", 400000],
-			["cl3_458_yellow", 400000],
-			["cl3_458_red", 400000],
-			["cl3_458_black", 400000],
-			["cl3_458_white", 400000],
-			["cl3_458_silver", 400000],
+			["exxpensive_chrysler_300c_base",10000],
+			["exxpensive_Audi_q7_base",11560],
+			["cl3_e63_amg_black", 30000],
+			["cl3_e63_amg_red", 30000],
+			["cl3_e63_amg_white", 30000],
+			["cl3_e63_amg_silver", 30000],
+			["cl3_dbs_volante_yellow", 44000],
+			["cl3_dbs_volante_burgundy", 44000],
+			["cl3_dbs_volante_red", 44000],
+			["cl3_dbs_volante_white", 44000],
+			["cl3_dbs_volante_black", 44000],
+			["exxpensive_porsche_panamera_base",56000],
+			["exxpensive_mercedes_sls_base",60000],
+			["exxpensive_jaguar_base",62000],
+			["cl3_carrera_gt_babyblue", 76000],
+			["cl3_carrera_gt_white", 76000],
+			["cl3_carrera_gt_orange", 76000],
+			["cl3_carrera_gt_black", 76000],
+			["cl3_carrera_gt_red", 76000],
+			["cl3_458_flame", 96000],
+			["cl3_458_yellow", 96000],
+			["cl3_458_red", 96000],
+			["cl3_458_black", 96000],
+			["cl3_458_white", 96000],
+			["cl3_458_silver", 96000],
 			
 			/*["cl3_r8_spyder_2tone2", 450000],
 			["cl3_r8_spyder_black", 450000],
@@ -111,20 +111,20 @@ switch (_shop) do
 			["cl3_r8_spyder_white", 450000],
 			["cl3_r8_spyder_yellow", 450000],*/
 			
-			["cl3_murcielago_black", 500000],
-			["cl3_murcielago_blue", 500000],
-			["cl3_murcielago_orange", 500000],
-			["cl3_murcielago_red", 500000],
-			["cl3_murcielago_white", 500000],
-			["cl3_murcielago_yellow", 500000],
-			["cl3_reventon_white", 750000],
-			["cl3_reventon_green", 750000],
-		    ["cl3_reventon_light_blue", 750000],
-			["cl3_reventon_light_yellow", 750000],
-			["cl3_reventon_lime", 750000],
-			["cl3_reventon_orange", 750000],
-		    ["cl3_reventon_red", 750000],
-			["exxpensive_bugatti_base",1000000]
+			["cl3_murcielago_black", 120000],
+			["cl3_murcielago_blue", 120000],
+			["cl3_murcielago_orange", 120000],
+			["cl3_murcielago_red", 120000],
+			["cl3_murcielago_white", 120000],
+			["cl3_murcielago_yellow", 120000],
+			["cl3_reventon_white", 142000],
+			["cl3_reventon_green", 142000],
+		    ["cl3_reventon_light_blue", 142000],
+			["cl3_reventon_light_yellow", 142000],
+			["cl3_reventon_lime", 142000],
+			["cl3_reventon_orange", 142000],
+		    ["cl3_reventon_red", 142000],
+			["exxpensive_bugatti_base",200000]
 		];
 	};
 	
@@ -132,15 +132,15 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Van_01_transport_F",40000],
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",275000],
-			["O_Truck_03_transport_F",200000],
-			["O_Truck_03_covered_F",250000],
-			["O_Truck_03_device_F",450000],
-			["B_Truck_01_box_F",750000]
+			["C_Van_01_transport_F",3000],
+			["C_Van_01_box_F",5000],
+			["I_Truck_02_transport_F",6000],
+			["I_Truck_02_covered_F",7000],
+			["B_Truck_01_transport_F",15000],
+			["O_Truck_03_transport_F",9000],
+			["O_Truck_03_covered_F",20000],
+			["O_Truck_03_device_F",10000],
+			["B_Truck_01_box_F",27000]
 		];	
 	};
 	
@@ -178,17 +178,11 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return pushBack
-		["C_Offroad_01_F",5000];
-		_return pushBack
 		["C_SUV_01_F",20000];
 		_return pushBack
 		["cl3_murcielago_police",15000];
 		_return pushBack
 		["DAR_ExplorerPolice",67500];
-		_return pushBack
-		["DAR_ChargerPolice",67500];
-		_return pushBack
-		["DAR_TahoePolice",67500];
 		_return pushBack
 		["cl3_reventon_clpd",67500];
 		_return pushBack

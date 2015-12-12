@@ -9,7 +9,7 @@ private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
-if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (_veh isKindOf "CIV_new_bike") OR (_veh isKindOf "McN_M1030")) then
+if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
 {
 	if("ToolKit" in (items player)) then
 	{
@@ -28,12 +28,6 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		
 		while{true} do
 		{
-			/*if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-				[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-			};
-			sleep 0.27;*/
-			
 			if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then 
 			{
 				player action ["SwitchWeapon", player, player, 100];
@@ -64,5 +58,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};
+	_ui = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
+	_ui cutRsc["osefStatusBarAdmin","PLAIN"];
 };
-_ui = "StatusBar" call BIS_fnc_rscLayer;_ui cutRsc["StatusBar","PLAIN"];
+

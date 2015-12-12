@@ -1,7 +1,7 @@
 author = "Tonic";
 onLoadName = "GhostSquad Life v3.1.4.8";
-onLoadMission = "Développé par Tonic/ Modifié par Ricardo Gomez & Jackpote";
-loadScreen = "";
+onLoadMission = "Modifié par Ricardo Gomez, Jackpote et Hans";
+loadScreen = "images\logoGS.paa";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;

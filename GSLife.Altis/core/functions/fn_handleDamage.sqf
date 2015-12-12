@@ -21,10 +21,10 @@ if(!isNil "TON_Debug") then {
 if(!isNull _source) then {
 	if(_source != _unit) then {
 		_curWep = currentWeapon _source;
-		if(_projectile in ["DDOPP_1Rnd_X26"] && _curWep in ["DDOPP_X26"]) then {
+		if(_projectile in ["DDOPP_B_Taser"] && _curWep in ["DDOPP_X26"]) then {
 			if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
-				_distance = if(_projectile == "DDOPP_1Rnd_X26") then {100} else {35};
+				_distance = if(_projectile == "B_556x45_dual") then {100} else {35};
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 				

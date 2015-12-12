@@ -220,6 +220,7 @@ class Life_Client_Core
 		class autoSave {};
 		class pulloutVehCiv {};
 		class emptyFuel {};
+		class randomRound {};
 	};
 	
 	class Network
