@@ -15,7 +15,6 @@ if (playerSide == civilian) then
 	};
         // Always pull Civ´s out, instead of any variable
 	player action ["Eject", vehicle player];
-	titleText["Vous avez été arraché de la voiture par la force!","PLAIN"];
 	titleFadeOut 4;
 }; 
 
@@ -27,7 +26,6 @@ if (playerSide == west) then
 		player setVariable["Escorting",false,true];
 		player setVariable["transporting",false,true];
 		player action ["Eject", vehicle player];
-		titleText["Vous avez été libéré du véhicule par un collègue!","PLAIN"];
 		titleFadeOut 4;
 	};
 };

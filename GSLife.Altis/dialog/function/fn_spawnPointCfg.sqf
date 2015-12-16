@@ -30,7 +30,7 @@ switch (_side) do
                                     ["altismarket_civ","Altis Market","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 									["civ_spawn_2","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 									["civ_spawn_3","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-									["spawn_rebelle","Base Rebelle","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+									["spawn_rebelle","Planque MAFIA","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
                                     ];
                     };
                    

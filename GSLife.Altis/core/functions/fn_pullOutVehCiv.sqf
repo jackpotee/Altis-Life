@@ -1,10 +1,8 @@
 /*
-	File: fn_pullOutVeh.sqf
-	Author: Bryan "Tonic" Boardwine
-	
-	*Edited by Hoe.GMG.Crew
+	File: fn_pullOutVehCiv.sqf
+	Author: Ricardo Gomez
 */
-//if(playerSide == west OR (vehicle player == player)) exitWith {};
+
 if(vehicle player == player) exitWith {};
 if(player getVariable "hostage") then
 {
@@ -12,6 +10,5 @@ if(player getVariable "hostage") then
 	player setVariable["Escorting",false,true];
 	player setVariable["transporting",false,true];
 	player action ["Eject", vehicle player];
-	titleText["Vous avez été traîné hors de la voiture!","PLAIN"];
 	titleFadeOut 4;
 };
