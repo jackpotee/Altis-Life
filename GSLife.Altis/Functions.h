@@ -218,7 +218,7 @@ class Life_Client_Core
 		class loadGear {};
 		class stripDownPlayer {};
 		class autoSave {};
-		class pulloutVehCiv {};
+		class pullOutVehCiv {};
 		class emptyFuel {};
 		class randomRound {};
 	};

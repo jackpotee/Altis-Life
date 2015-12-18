@@ -4,7 +4,7 @@
 */
 
 if(vehicle player == player) exitWith {};
-if(player getVariable "hostage") then
+if(player getVariable "hostage" || player getVariable "restrained") then
 {
 	detach player;
 	player setVariable["Escorting",false,true];
