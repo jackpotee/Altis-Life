@@ -359,6 +359,30 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "cl3_e63_amg_black":
+	case "cl3_dbs_volante_yellow":
+	case "cl3_carrera_gt_babyblue":
+	case "cl3_458_flame":	
+	case "cl3_r8_spyder_2tone2":	
+	case "cl3_murcielago_black":	
+	case "cl3_reventon_white":	
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "jaune};
+			case 1: {_color = "noir"};
+			case 2: {_color = "bleu"};
+			case 3: {_color = "rouge"};
+			case 4: {_color = "vert"};
+			case 5: {_color = "gris"};
+			case 6: {_color = "orange"};
+			case 7: {_color = "violet"};
+			case 5: {_color = "silver"};
+			case 6: {_color = "blanc"};
+		};
+	};
+	
+	
 	case "exxpensive_Audi_q7_base":
 	{
 		switch (_index) do
