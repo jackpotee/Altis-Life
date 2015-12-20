@@ -534,6 +534,9 @@ class Life_RscListBox
 	tooltipColorText[] = {1,1,1,1};
 	tooltipColorBox[] = {1,1,1,1};
 	tooltipColorShade[] = {0,0,0,0.65};
+	colorPicture[] = {1,1,1,1};
+	colorPictureSelected[] = {1,1,1,1};
+	colorPictureDisabled[] = {1,1,1,1};
 	class ListScrollBar: Life_RscScrollBar
 	{
 		color[] = {1,1,1,1};

@@ -317,7 +317,7 @@ switch (_code) do
         }
     };
 	
-	//Main sur la tête = Touche [TAB]
+	//Main sur la tête = Touche [TAB] devient shift + L ==>  case 38
 case 15:
 {
 if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then

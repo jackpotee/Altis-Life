@@ -77,7 +77,7 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,60); //Five minutes
+__CONST__(life_paycheck_period,10); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
@@ -92,12 +92,12 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 20000; //Starting Bank Money
-		life_paycheck = 25; //Paycheck Amount
+		life_paycheck = 250; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 0; //Paycheck Amount
+		life_paycheck = 100; //Paycheck Amount
 	};
 	
 	case independent: {

@@ -402,7 +402,6 @@ switch(_shop) do
 				["ItemMap",nil,100],
 				["ItemRadio",nil,350],
 				["Binocular",nil,150],
-				["Laserdesignator",nil,350],
 				["ItemGPS",nil,100],
 				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],
