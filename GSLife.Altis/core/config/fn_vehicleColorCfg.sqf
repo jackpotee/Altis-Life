@@ -378,6 +378,17 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
+	
+	case "SAL_AudiCiv":
+	{
+	_ret = 
+		[
+			["SAL_A4\Data\Body_coRed.paa","civ"],
+			["SAL_A4\Data\Body_coSilver.paa","civ"],
+			["SAL_A4\Data\Body_coBlack.paa","civ"]
+
+		];
+	};	
 };
 
 _ret;

@@ -111,6 +111,180 @@ switch(_shop) do
 	};
 	
 	
+	case "cop_equip_Armes":
+	{
+		if (playerSide != west) exitWith {
+			"Seuls les gendarmes sont autorisés!"
+		};
+
+		_content =
+		[
+			["optic_Aco_smg",nil,200],
+			["optic_ACO_grn",nil,200],
+			["optic_Holosight",nil,200],
+			["optic_Holosight_smg",nil,200],
+			["optic_Arco",nil,200],
+			["optic_Hamr",nil,200],
+			["optic_MRCO",nil,200],
+			["optic_DMS",nil,200],
+			["optic_NVS",nil,200],
+			["optic_SOS",nil,200],
+			["optic_LRPS",nil,200],
+			["optic_KHS_blk",nil,200],
+			["optic_AMS",nil,200],
+			["acc_flashlight",nil,100],
+			["acc_pointer_IR",nil,200]
+
+		};
+
+	};	
+
+	case "rebel":
+	{
+		if (playerSide != civilian || !license_civ_rebel) exitWith {
+			"Seuls les rebelles sont autorisés!"
+		};
+
+		_content =
+		[
+		
+			//pistols
+			["hgun_Pistol_heavy_01_F",nil,200],
+			["11Rnd_45ACP_Mag",nil,200],
+			["RH_m9c",nil,200],
+			["RH_15Rnd_9x19_M9",nil,200],
+			["RH_cz75",nil,200],
+			["RH_16Rnd_9x19_CZ",nil,200],
+			["RH_fn57_t",nil,200],
+			["RH_20Rnd_57x28_FN",nil,200],		
+			["RH_g18",nil,200],
+			["RH_19Rnd_9x19_g18",nil,200],
+			["RH_m1911",nil,200],
+			["RH_7Rnd_45cal_m1911",nil,200],
+			["RH_mak",nil,200],
+			["RH_8Rnd_9x18_Mak",nil,200],
+			["RH_muzi",nil,200],
+			["RH_30Rnd_9x19_UZI",nil,200],				
+			["RH_mk2",nil,200],
+			["RH_10Rnd_22LR_mk2",nil,200],
+			["RH_tt33",nil,200],
+			["RH_8Rnd_762_tt33",nil,200],		
+			["RH_vp70",nil,200],
+			["RH_18Rnd_9x19_VP",nil,200],
+
+			["hgun_P07_F",nil,7500],
+			["hgun_Pistol_heavy_02_Yorris_F",nil,12000],
+			["arifle_SDAR_F",nil,20000],
+			["optic_ACO_grn",nil,3500],
+			["optic_Holosight",nil,3600],
+			["acc_flashlight",nil,1000],
+			["optic_Hamr",nil,7500],
+			["30Rnd_9x21_Mag",nil,200],
+			["20Rnd_556x45_UW_mag",nil,125],
+			["30Rnd_556x45_Stanag",nil,300],
+			["10Rnd_762x51_Mag",nil,500],
+			["30Rnd_65x39_caseless_green",nil,275],
+			["6Rnd_45ACP_Cylinder",nil,100],			/* chargeur Zubr. */
+			["16Rnd_9x21_Mag",nil,85],					/* chargeur p07	*/
+			["optic_SOS",nil,85],						/* viseur SOS	*/
+			["acc_pointer_IR",nil,3500],				/* Viseur RCO	*/
+			["optic_MRCO",nil,3500],					/* viseur mrco	*/
+			["muzzle_snds_L",nil,2500],					/* silencieux p07 */
+			["muzzle_snds_H",nil,2500],  				/* silencieux katiba */
+						
+			
+			//fusils
+			["hlc_rifle_ak12",nil,200],
+			["hlc_30Rnd_545x39_B_AK",nil,200],
+			["hlc_rifle_aku12",nil,200],
+			["hlc_30Rnd_545x39_B_AK",nil,200],
+			["hlc_rifle_akm",nil,200],
+			["hlc_30Rnd_762x39_b_ak",nil,200],
+			["hlc_rifle_aks74",nil,200],
+			["hlc_30Rnd_545x39_B_AK",nil,200],
+			["hlc_rifle_RPK12",nil,200],
+			["hlc_45Rnd_545x39_t_rpk",nil,200],
+			["hlc_rifle_saiga12k",nil,200],
+			["hlc_10rnd_12g_buck_S12",nil,100],			
+			["ej_ThompsonTactical2",nil,200],
+			["Thompson_mag",nil,200],
+			["LMG_Mk200_F",nil,200],
+			["200Rnd_65x39_cased_Box",nil,100],
+			["hlc_rifle_augsrcarb_t",nil,200],
+			["hlc_30Rnd_556x45_B_AUG",nil,100],		
+			["hlc_rifle_auga3_b",nil,200],
+			["hlc_30Rnd_556x45_B_AUG",nil,100],		
+			["srifle_DMR_01_F",nil,200],
+			["10Rnd_762x54_Mag",nil,100],					
+			["arifle_Katiba_F",nil,200],
+			["30Rnd_65x39_caseless_green",nil,100],	
+
+			
+			//MOD
+			
+			//ARMES
+			["RH_m4",nil,2500],
+			["RH_M4_ris",nil,2500],
+			["RH_M4_M203",nil,2500],
+			["RH_M4sbr",nil,2500],
+			
+			//SILENCIEUX
+			["RH_qdss_nt4",nil,2500],
+			["RH_saker",nil,2500],
+			["RH_qdss_nt4b",nil,2500],
+			["RH_sakerb",nil,2500],
+			["RH_spr_mbs",nil,2500],
+			//////////
+			
+			//LASERS
+			["RH_peq15",nil,2500],
+			["RH_peq15_top",nil,2500],
+			["RH_peq2",nil,2500],
+			["RH_peq2_top",nil,2500],
+			//////////
+			
+			//VISEURS
+			["RH_SFM952V_tan",nil,2500],
+			["RH_eotech553",nil,2500],
+			["RH_compm4s",nil,2500],
+			["RH_t1",nil,2500],
+			["RH_reflex",nil,2500],
+			["RH_Delft",nil,2500],
+			["RH_m3lr",nil,2500],
+			["RH_ta31rco",nil,2500],
+			["RH_ta31rco_2D",nil,2500],
+			//////////
+			
+			//RAILS M4 & M16
+			["RH_m4covers_s",nil,2500],
+			["RH_m16covers_s",nil,2500],
+			["RH_m16covers_f",nil,2500],
+			["RH_m4covers_f",nil,2500]
+			//////////
+		
+			
+			
+			// armes de haut rang mafia
+			["srifle_EBR_F",nil,200],
+			["20Rnd_762x51_Mag",nil,200],	
+			["caf_pkm",nil,200],
+			["CAF_100Rnd_762x54_PKM",nil,100],	
+			["srifle_GM6_F",nil,200],
+			["5Rnd_127x108_Mag",nil,100],	
+			
+			//
+			["srifle_LRR_F",nil,100],
+			["7Rnd_408_Mag",nil,200],			
+			
+			//
+			["chakFirst_Drum75_m203GL_skin1",nil,200],
+			["chakfirst_762x39_B_Drum75skin1",nil,200]
+			
+		};
+
+	};	
+	
+	
 	case "med_basic":
 	{
 		switch (true) do 
@@ -133,280 +307,7 @@ switch(_shop) do
 		};
 	};
 
-	case "cop_patrol":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
-			default
-			{
-				["Altis Patrol Officer Shop",
-					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_9x21_Mag",nil,250]
-					]
-				];
-			};
-		};
-	};
 
-	case "cop_sergeant":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
-			default
-			{
-				["Altis Sergeant Officer Shop",
-					[
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
-					]
-				];
-			};
-		};
-	};
-	
-	case "rebel":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"Tu n'as pas la licence rebelle!"};
-			default
-			{
-				["Arme Rebelle",
-					[
-						["hgun_P07_F",nil,7500],
-						["hgun_Pistol_heavy_02_Yorris_F",nil,12000],
-						["arifle_SDAR_F",nil,20000],
-						["optic_ACO_grn",nil,3500],
-						["optic_Holosight",nil,3600],
-						["acc_flashlight",nil,1000],
-						["optic_Hamr",nil,7500],
-						["30Rnd_9x21_Mag",nil,200],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["30Rnd_556x45_Stanag",nil,300],
-						["10Rnd_762x51_Mag",nil,500],
-						["30Rnd_65x39_caseless_green",nil,275],
-						["6Rnd_45ACP_Cylinder",nil,100],			/* chargeur Zubr. */
-						["16Rnd_9x21_Mag",nil,85],					/* chargeur p07	*/
-						["optic_SOS",nil,85],						/* viseur SOS	*/
-						["acc_pointer_IR",nil,3500],				/* Viseur RCO	*/
-						["optic_MRCO",nil,3500],					/* viseur mrco	*/
-						["muzzle_snds_L",nil,2500],					/* silencieux p07 */
-						["muzzle_snds_H",nil,2500],  				/* silencieux katiba */
-						
-						//MOD
-						
-						//ARMES
-						["RH_m4",nil,2500],
-						["RH_M4_ris",nil,2500],
-						["RH_M4_M203",nil,2500],
-						["RH_M4sbr",nil,2500],
-						
-						//SILENCIEUX
-						["RH_qdss_nt4",nil,2500],
-						["RH_saker",nil,2500],
-						["RH_qdss_nt4b",nil,2500],
-						["RH_sakerb",nil,2500],
-						["RH_spr_mbs",nil,2500],
-						//////////
-						
-						//LASERS
-						["RH_peq15",nil,2500],
-						["RH_peq15_top",nil,2500],
-						["RH_peq2",nil,2500],
-						["RH_peq2_top",nil,2500],
-						//////////
-						
-						//VISEURS
-						["RH_SFM952V_tan",nil,2500],
-						["RH_eotech553",nil,2500],
-						["RH_compm4s",nil,2500],
-						["RH_t1",nil,2500],
-						["RH_reflex",nil,2500],
-						["RH_Delft",nil,2500],
-						["RH_m3lr",nil,2500],
-						["RH_ta31rco",nil,2500],
-						["RH_ta31rco_2D",nil,2500],
-						//////////
-						
-						//RAILS M4 & M16
-						["RH_m4covers_s",nil,2500],
-						["RH_m16covers_s",nil,2500],
-						["RH_m16covers_f",nil,2500],
-						["RH_m4covers_f",nil,2500]
-						//////////
-					]
-				];
-			};
-		};
-	};
-	
-	case "rebel1":			//grade 1 rebelle
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"Tu n'as pas la licence Rebelle!"};
-			case (!license_civ_rebel1): {"Tu n'as pas l'entrainement rebelle 1!"};
-			default
-			{
-				["Arme Rebelle Grade 1",
-					[
-						["hgun_ACPC2_F",nil,10500],
-						["srifle_EBR_F",nil,50000],
-						["9Rnd_45ACP_Mag",nil,85],					/* chargeur ACPC2	*/
-						["20Rnd_762x51_Mag",nil,125],				/* chargeur mk18 */
-						["optic_LRPS",nil,5000],					/* viseur lrps	*/
-						["muzzle_snds_acp",nil,2500],				/* silencieux ACPC2 */
-						["muzzle_snds_B",nil,2500],					/* silencieux mk18 */
-						["SmokeShell",nil,2000],
-						["HandGrenade_Stone","Grenade Flash",3000],
-						["HandGrenade",nil,3000],
-						
-						//MOD
-					
-						//ARMES 
-						["arifle_mas_aks74u",nil,35000],
-						["arifle_mas_ak_74m",nil,50000], 
-						["arifle_mas_m70",nil,50000],
-						["arifle_mas_ak_74m_sf",nil,70000], 
-						["LMG_mas_rpk_F",nil,150000],
-						["30Rnd_mas_545x39_mag",nil,250],
-						["30Rnd_mas_762x39_mag",nil,250],
-						["muzzle_mas_snds_AK",nil,3000],
-						["optic_mas_pso",nil,3000],
-						["optic_mas_pso_nv",nil,3000], 
-						["optic_mas_pso_eo",nil,3000], 
-						["optic_mas_pso_nv_eo",nil,3000], 
-						["optic_mas_acog",nil,3000], 
-						["optic_mas_acog_eo",nil,3000], 
-						["optic_mas_acog_rd",nil,3000], 
-						["optic_mas_aim",nil,3000], 
-						["optic_mas_term",nil,3000],
-						["optic_Nightstalker",nil,3000],
-						["optic_mas_Holosight_blk",nil,3000], 
-						["optic_mas_Arco_blk",nil,3000],
-						["optic_mas_DMS",nil,3000],
-						["arifle_mas_ak_74m_c",nil,50000],
-						["arifle_mas_ak_74m_sf_c",nil,70000],
-						["optic_mas_acog_c",nil,3000], 
-						["optic_mas_acog_eo_c",nil,3000], 
-						["optic_mas_acog_rd_c",nil,3000], 
-						["optic_mas_DMS_c",nil,3000], 
-						["optic_mas_aim_c",nil,3000],
-						["optic_mas_Holosight_camo",nil,3000], 
-						["optic_mas_Arco_camo",nil,3000], 
-						["optic_mas_Hamr_camo",nil,3000], 
-						["optic_mas_Aco_camo",nil,3000], 
-						["optic_mas_ACO_grn_camo",nil,3000], 
-						["optic_mas_MRCO_camo",nil,3000],
-						["optic_mas_pso_c",nil,3000],
-						["optic_mas_pso_nv_c",nil,3000], 
-						["optic_mas_pso_eo_c",nil,3000], 
-						["optic_mas_pso_nv_eo_c",nil,3000]
-					]
-				];
-			};
-		};
-	};
-	
-	case "rebel2":			//grade 2 rebelle
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"Tu n'as pas la licence Rebelle!"};
-			case (!license_civ_rebel1): {"Tu n'as pas l'entrainement rebelle 1!"};
-			case (!license_civ_rebel2): {"Tu n'as pas l'entrainement rebelle 2!"};
-			default
-			{
-				["Arme Rebelle Grade 2",
-					[
-						["LMG_Mk200_F",nil,250000],
-						["200Rnd_65x39_cased_Box",nil,250],		/* chargeur mk200  */
-						["srifle_LRR_LRPS_F",nil,250000],
-						["7Rnd_408_Mag",nil,250],				/* chargeur LRR ( sniper ) */
-						["srifle_mas_m91",nil,250000],
-						["srifle_mas_svd",nil,250000],
-						["10Rnd_mas_762x54_mag",nil,250],	
-						["srifle_mas_ksvk",nil,250000],
-						["5Rnd_mas_127x108_mag",nil,250],
-						["5Rnd_127x108_Mag",nil,250],
-						["optic_LRPS",nil,5000],
-						["optic_NVS",nil,5000],				/* viseur NVS nightvision */
-						
-						//MOD
-						["arifle_mas_m1014",nil,5000],
-						["7Rnd_mas_12Gauge_Slug",nil,250],	
-						
-						["LMG_mas_m240_F",nil,5000],
-						["LMG_mas_mk48_F",nil,5000],
-						["150Rnd_762x51_Box",nil,500],	
-						
-						["srifle_mas_m107",nil,5000],	
-						["5Rnd_mas_127x99_Stanag",nil,250],
-						["muzzle_mas_snds_SV",nil,2500],							
-						
-						["arifle_mas_mp5",nil,5000],	
-						["30Rnd_9x21_Mag",nil,5000],
-						["muzzle_mas_snds_C",nil,2500],	
-						
-						["srifle_mas_m24",nil,5000],	
-						["5Rnd_mas_762x51_Stanag",nil,250],	
-						
-						["srifle_mas_sr25",nil,5000],	
-						["20Rnd_762x51_Mag",nil,125],
-						["muzzle_mas_snds_SM",nil,2500]	
-						
-					]
-				];
-			};
-		};
-	};
-	
-	case "rebel3":			//grade 3 rebelle
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"Tu n'as pas la licence Rebelle!"};
-			case (!license_civ_rebel1): {"Tu n'as pas l'entrainement rebelle 1!"};
-			case (!license_civ_rebel2): {"Tu n'as pas l'entrainement rebelle 2!"};
-			case (!license_civ_rebel3): {"Tu n'as pas l'entrainement rebelle 3!"};
-			default
-			{
-				["Arme Rebelle Grade 3",
-					[
-						["launch_NLAW_F",nil,500000],
-						["launch_RPG32_F",nil,500000],
-						["NLAW_F",nil,75000],
-						["RPG32_F",nil,75000],
-						["RPG32_HE_F",nil,80000]
-					]
-				];
-			};
-		};
-	};
 	
 	case "gun":
 	{

@@ -27,7 +27,11 @@ switch (_shop) do
 			["C_Offroad_01_F",10000],
 			["I_Truck_02_medical_F",25000],
 			["O_Truck_03_medical_F",45000],
-			["B_Truck_01_medical_F",60000]
+			["sfp_wheelchair",60000],
+			["DAR_TahoeEMS",45000],
+			["TCG_CVPILBFD",60000],
+			["Jonzie_Ambulance",45000],
+			["A3L_AmberLamps",60000]			
 		];
 	};
 	
@@ -47,28 +51,14 @@ switch (_shop) do
 			["cl3_lada_white", 800],
 			["cl3_lada_red", 800],
 			["LandRover_TK_CIV_EP1",1500],	
-			["cl3_golf_mk2_blue", 2400],
-			["cl3_golf_mk2_black", 2400],
-			["cl3_golf_mk2_yellow", 2400],
-			["cl3_golf_mk2_white", 2400],
-			["cl3_golf_mk2_red", 2400],
-			["cl3_civic_vti_red", 2750],
-			["cl3_civic_vti_black", 2750],
-			["cl3_civic_vti_white", 2750],
+			["cl3_golf_mk2", 2400],
+			["cl3_civic_vti", 2750],
 			["exxpensive_m5_e34_base",3600],
 			["exxpensive_BMWM3E46_base",4000],
-			["SAL_AudiCivRed", 4400],
-			["SAL_AudiCivSilver", 4400],
-			["SAL_AudiCivBlack", 4400],
-			["cl3_insignia_white", 5091],
-			["cl3_insignia_black", 5091],
-			["cl3_insignia_silver", 5091],
-			["cl3_range_rover_black", 6400],
-			["cl3_range_rover_white", 6400],
-			["cl3_taurus_black", 5440],
-			["cl3_taurus_yellow", 5440],
-			["cl3_taurus_orange", 5440],
-			["cl3_taurus_white", 5440]
+			["SAL_AudiCiv", 4400],
+			["cl3_insignia", 5091],
+			["cl3_range_rover", 6400],
+			["cl3_taurus", 5440],
 		];
 	};
 	
@@ -116,11 +106,7 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",150000],
-			["O_MRAP_02_hmg_F",1750000],
-			["O_MRAP_02_gmg_F",3500000],
 			["I_MRAP_03_F",210000],
-			["I_MRAP_03_hmg_F",2250000],
-			["I_MRAP_03_gmg_F",4500000],
 			["DAR_4X4",750000],
 			["DAR_MK23",750000],
 			["DAR_LHS_16",750000],
@@ -130,7 +116,17 @@ switch (_shop) do
 			["I_Heli_Transport_02_F",1000000],
 			["I_Heli_light_03_unarmed_F",600000],
 			["I_Heli_light_03_F",2125000],
-			["B_G_Offroad_01_armed_F",750000]
+			["B_G_Offroad_01_armed_F",750000],
+			
+			
+			["shounka_clk_noir",600000],
+			["Mrshounka_Alfa_Romeo_civ",2125000],
+			["Mrshounka_bmwm6_civ",750000],
+			["shounka_a3_rs5_civ",600000],
+			["Mrshounka_cayenne_p_noir",2125000],
+			["shounka_porsche911",750000]
+			
+			
 		];
 		
 		if(license_civ_rebel) then
@@ -151,6 +147,24 @@ switch (_shop) do
 		["cl3_reventon_clpd",67500];
 		_return pushBack
 		["Exxpensive_dodge_charger_police",67500];
+		
+		_return pushBack
+		["DAR_ExplorerPolBase",20000];
+		_return pushBack
+		["DAR_ImpalaPolice",15000];
+		_return pushBack
+		["DAR_TahoeFPBLBPD",67500];
+		_return pushBack
+		["A3L_EvoXFPBLBPD",67500];
+		_return pushBack
+		["A3L_CVPIFPBLBPD",67500];		
+		_return pushBack
+		["A3L_TaurusFPBLBPD",20000];
+		_return pushBack
+		["TCG_CVPIFPBLBSTATE",15000];
+		_return pushBack
+		["Gurkha_M60",67500];
+		
 		
 		if(__GETC__(life_coplevel) > 2) then
 		{

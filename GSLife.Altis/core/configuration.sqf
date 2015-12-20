@@ -94,12 +94,12 @@ switch (playerSide) do
 		life_atmcash = 20000; //Starting Bank Money
 		life_paycheck = 25; //Paycheck Amount
 	};
-	case civilian: 
+/*	case civilian: 
 	{
 		life_atmcash = 10000; //Starting Bank Money
 		life_paycheck = 0; //Paycheck Amount
 	};
-	
+*/	
 	case independent: {
 		life_atmcash = 15000;
 		life_paycheck = 50;
@@ -248,7 +248,6 @@ sell_array =
 	["turtle",750],
 	["water",1],
 	["coffee",2],
-	["turtlesoup",200],
 	["donuts",5],
 	["marijuana",150],
 	["tbacon",8],
@@ -299,7 +298,6 @@ buy_array =
 	["mullet",70],
 	["catshark",80],
 	["water",1],
-	["turtle",820],
 	["turtlesoup",225],
 	["donuts",5],
 	["coffee",2],
@@ -314,7 +312,6 @@ buy_array =
 	["peach",3],
 	["spikeStrip",20],
 	["blastingcharge",15000],
-	["boltcutter",2500],
 	["defusekit",25],
 	["storagesmall",300],
 	["storagebig",600],

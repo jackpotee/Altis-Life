@@ -21,18 +21,21 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) >= 1) then
 		{
-			_ret pushBack ["U_Rangemaster","Uniforme recrue",0];
+			_ret pushBack ["A3L_Police_Uniform",nil,0];
+			_ret pushBack ["police_uni1",nil,0];
+			_ret pushBack ["max_Lapd_uniform",nil,0];
+			_ret pushBack ["U_007_US_Police_officer",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["U_B_CTRG_3","Uniforme Sergent",0];
-			_ret pushBack ["U_B_Wetsuit",nil,0];
-			_ret pushBack ["U_I_Wetsuit",nil,0];
-			_ret pushBack ["U_O_Wetsuit",nil,0];
+			_ret pushBack ["A3L_Sheriff_Uniform","Uniforme Sheriff",0];
+			_ret pushBack ["max_sheriff_uniform",nil,0];
+			_ret pushBack ["swat_officer_lapd",nil,0];
+			_ret pushBack ["swat_lapd_uniform",nil,0];
 		};
 		
-		if(__GETC__(life_coplevel) >= 3) then
+	/*	if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_vest","Uniforme Adjudant",0];
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
@@ -54,11 +57,10 @@ switch (_filter) do
 			_ret pushBack ["U_B_GhillieSuit",nil,0];
 			_ret pushBack ["U_O_GhillieSuit",nil,0];
 		};
-		
+	*/	
 		if(__GETC__(life_coplevel) >= 6) then
 		{
-			_ret pushBack ["U_B_CTRG_1","Uniforme Capitaine",0];
-			_ret pushBack ["U_B_CombatUniform_mcam","Uniforme General",0];
+			_ret pushBack ["DAR_ACUG","Uniforme General",0];
 		};
 	};
 	
@@ -67,29 +69,29 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) >= 1) then
 		{
-			_ret pushBack ["H_Booniehat_mcamo",nil,0];
+			_ret pushBack ["fbi_officer_cap",nil,0];
+			_ret pushBack ["max_police_Hat",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["H_MilCap_mcamo",nil,0];
-			_ret pushBack ["H_PilotHelmetFighter_B",nil,0];
-			_ret pushBack ["H_HelmetB_camo",nil,0];
-			_ret pushBack ["H_HelmetB_light",nil,0];
-			_ret pushBack ["H_Beret_blk_POLICE",nil,0];
+			_ret pushBack ["max_sergeant_Hat",nil,0];
+
 		};
 		
 		if(__GETC__(life_coplevel) >= 3) then
 		{
-			_ret pushBack ["H_Beret_02",nil,0];
-			_ret pushBack ["H_Beret_Colonel",nil,0];
+			_ret pushBack ["max_sheriff_Hat",nil,0];
+			_ret pushBack ["H_Stetson",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_ret pushBack ["H_BandMask_reaper",nil,0];
-			_ret pushBack ["H_Watchcap_camo",nil,0];
-			_ret pushBack ["H_Bandanna_gry",nil,0];
+		_ret pushBack ["Police_Swat_Helmet",nil,0];
+		_ret pushBack ["gear_ECH_BK_11",nil,0];
+		_ret pushBack ["gear_ECH_BK_01",nil,0];
+		_ret pushBack ["gear_ECH_BK_21",nil,0];
+		_ret pushBack ["R3F_casque_spectra_EOD",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 5) then
@@ -98,10 +100,12 @@ switch (_filter) do
 		
 		if(__GETC__(life_coplevel) >= 6) then
 		{
+			_ret pushBack ["H_BeretBlack",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 7) then
 		{
+			_ret pushBack ["H_BeretMaroon",nil,0];
 		};
 	};
 	
@@ -133,11 +137,19 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) >= 1 ) then
 		{
-			_ret pushBack ["V_Rangemaster_belt",nil,0];
+			_ret pushBack ["A3L_policevest2",nil,0];
 		};
 		
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_ret pushBack ["A3L_policevest1",nil,0];
+			_ret pushBack ["A3L_sheriffvest3",nil,0];
+			_ret pushBack ["A3L_sheriffvest1",nil,0];
+			
+			_ret pushBack ["gign_BlackVest",nil,0];  //menu déroulant à faire
+			
+			_ret pushBack ["Swat_sniper_vest",nil,0];
+			_ret pushBack ["police_swat_vest",nil,0];				
 			_ret pushBack ["V_PlateCarrier2_rgr",nil,0];
 			_ret pushBack ["V_PlateCarrier1_rgr",nil,0];
 			_ret pushBack ["V_PlateCarrier1_blk",nil,0];

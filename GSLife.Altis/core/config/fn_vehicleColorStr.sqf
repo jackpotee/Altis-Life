@@ -359,6 +359,12 @@ switch (_vehicle) do
 		};
 	};
 	
+	
+	case "cl3_golf_mk2";
+	case "cl3_civic_vti";
+	case "cl3_insignia";
+	case "cl3_range_rover";
+	case "cl3_taurus";	
 	case "cl3_e63_amg_black";
 	case "cl3_dbs_volante_yellow"
 	case "cl3_carrera_gt_babyblue";
@@ -381,6 +387,16 @@ switch (_vehicle) do
 			case 6: {_color = "blanc"};
 		};
 	};
+	
+	case "SAL_AudiCiv":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "rouge"};
+			case 1: {_color = "silver"};
+			case 2: {_color = "noir"};
+		};
+	};	
 	
 	
 	case "exxpensive_Audi_q7_base":
