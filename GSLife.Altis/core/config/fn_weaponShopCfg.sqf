@@ -23,23 +23,20 @@ switch(_shop) do
 	case "cop_basic":
 	{
 	
-		if (playerSide != west) exitWith {
-			"Seuls les gendarmes sont autorisés à commander des armes ici!!"
-		}
 		_content =
 		[
 			["DDOPP_X26","Taser",450],
 			["DDOPP_1Rnd_X26",nil,50],
-			["RH_m9","Sting 9 mm",7000],
+			["RH_m9",nil,7000],
 			["RH_15Rnd_9x19_M9",nil,60],
-			["RH_python","Sting 9 mm",7000],
+			["RH_python",nil,7000],
 			["RH_6Rnd_357_Mag",nil,60],
-			["RH_g17","Sting 9 mm",7000],
+			["RH_g17",nil,7000],
 			["RH_17Rnd_9x19_g17",nil,60],			
-			["RH_kimber_nw","Sting 9 mm",7000],
+			["RH_kimber_nw",nil,7000],
 			["RH_7Rnd_45cal_m1911",nil,60],				
 			
-			["SMG_02_F","Sting 9 mm",7000],
+			["SMG_02_F",nil,7000],
 			["30Rnd_9x21_Mag",nil,60],
 			["RH_hb_b",nil,10000],
 			["RH_30Rnd_762x35_FMJ",nil,60],
@@ -69,7 +66,7 @@ switch(_shop) do
 			_content pushBack ["RH_mp412",nil,30000];
 			_content pushBack ["RH_6Rnd_357_Mag",nil,30];
 			_content pushBack ["R3F_Minimi_HG",nil,100000];
-			_content pushBack ["R3F_Minimi_762_HG","MXM 6.5 mm",300;
+			_content pushBack ["R3F_Minimi_762_HG",nil,300];
 			_content pushBack ["R3F_FRF2",nil,100000];
 			_content pushBack ["R3F_10Rnd_762x51_FRF2",nil,60];
 		};
@@ -92,7 +89,7 @@ switch(_shop) do
 			_content pushBack ["R3F_M107",nil,30000];
 			_content pushBack ["R3F_10Rnd_127x99_M107",nil,30];
 			_content pushBack ["R3F_TAC50",nil,100000];
-			_content pushBack ["R3F_5Rnd_127x99_TAC50","MXM 6.5 mm",300;
+			_content pushBack ["R3F_5Rnd_127x99_TAC50",nil,300];
 		};
 		if (__GETC__(life_coplevel) >= 6) then {   //colonel
 			_content pushBack ["RH_Deagles",nil,100000];
@@ -100,22 +97,19 @@ switch(_shop) do
 			_content pushBack ["R3F_PGM_Hecate_II",nil,30000];
 			_content pushBack ["R3F_7Rnd_127x99_PGM",nil,30];
 			_content pushBack ["R3F_HK417L",nil,100000];
-			_content pushBack ["R3F_20Rnd_762x51_HK417","MXM 6.5 mm",300;
+			_content pushBack ["R3F_20Rnd_762x51_HK417",nil,300];
 		};
 		
 		if (__GETC__(life_coplevel) >= 7) then {   //général
 			_content pushBack ["RH_Deagleg",nil,100000];
 			_content pushBack ["RH_7Rnd_50_AE",nil,60];		
 		};
-		
+		["Armurerie Gendarmerie", _content];
 	};
 	
 	
 	case "cop_equip_Armes":
 	{
-		if (playerSide != west) exitWith {
-			"Seuls les gendarmes sont autorisés!"
-		};
 
 		_content =
 		[
@@ -135,15 +129,12 @@ switch(_shop) do
 			["acc_flashlight",nil,100],
 			["acc_pointer_IR",nil,200]
 
-		};
-
+		];
+		["Armurerie Gendarmerie acc", _content];
 	};	
 
 	case "rebel":
 	{
-		if (playerSide != civilian || !license_civ_rebel) exitWith {
-			"Seuls les rebelles sont autorisés!"
-		};
 
 		_content =
 		[
@@ -259,7 +250,7 @@ switch(_shop) do
 			["RH_m4covers_s",nil,2500],
 			["RH_m16covers_s",nil,2500],
 			["RH_m16covers_f",nil,2500],
-			["RH_m4covers_f",nil,2500]
+			["RH_m4covers_f",nil,2500],
 			//////////
 		
 			
@@ -280,8 +271,8 @@ switch(_shop) do
 			["chakFirst_Drum75_m203GL_skin1",nil,200],
 			["chakfirst_762x39_B_Drum75skin1",nil,200]
 			
-		};
-
+		];
+		["Armurerie reb", _content];
 	};	
 	
 	

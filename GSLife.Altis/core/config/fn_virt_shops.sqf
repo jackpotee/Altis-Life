@@ -23,7 +23,7 @@ switch (_shop) do
 	case "iron": {["Negociateur de fer",["iron_r","copper_r"]]};
 	case "diamond": {["Negociateur de diamants",["diamond","diamondc"]]};
 	case "salt": {["Negociateur de sels",["salt_r"]]};
-	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","gpstracker"]]};
+	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
 	case "cement": {["Negociateur de ciment",["cement"]]};
 	case "bois": {["Negociateur de bois",["bois","bois_r"]]};
 	case "gold": {["Acheteur d'Or",["goldbar"]]};

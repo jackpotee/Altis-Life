@@ -105,18 +105,9 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",150000],
 			["I_MRAP_03_F",210000],
-			["DAR_4X4",750000],
-			["DAR_MK23",750000],
-			["DAR_LHS_16",750000],
-			["DAR_LHS_8",750000],
-			["DAR_MK23ADT",750000],
 			["B_Heli_Light_01_F",325000],
 			["I_Heli_Transport_02_F",1000000],
-			["I_Heli_light_03_unarmed_F",600000],
-			["I_Heli_light_03_F",2125000],
-			["B_G_Offroad_01_armed_F",750000],
 			
 			
 			["shounka_clk_noir",600000],
