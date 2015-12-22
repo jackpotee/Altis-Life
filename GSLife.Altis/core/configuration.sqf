@@ -94,12 +94,12 @@ switch (playerSide) do
 		life_atmcash = 20000; //Starting Bank Money
 		life_paycheck = 25; //Paycheck Amount
 	};
-/*	case civilian: 
+	case civilian: 
 	{
 		life_atmcash = 10000; //Starting Bank Money
-		life_paycheck = 0; //Paycheck Amount
+		//life_paycheck = 0; //Paycheck Amount
 	};
-*/	
+	
 	case independent: {
 		life_atmcash = 15000;
 		life_paycheck = 50;

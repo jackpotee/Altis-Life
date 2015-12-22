@@ -48,17 +48,17 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",500],
 			["exxpensive_2cv_base",700],
-			["cl3_lada_white", 800],
-			["cl3_lada_red", 800],
+			["cl3_lada", 800],
+			["cl3_lada", 800],
 			["LandRover_TK_CIV_EP1",1500],	
-			["cl3_golf_mk2", 2400],
-			["cl3_civic_vti", 2750],
+			["cl3_golf_mk2_black", 2400],
+			["cl3_civic_vti_black", 2750],
 			["exxpensive_m5_e34_base",3600],
 			["exxpensive_BMWM3E46_base",4000],
 			["SAL_AudiCiv", 4400],
-			["cl3_insignia", 5091],
-			["cl3_range_rover", 6400],
-			["cl3_taurus", 5440],
+			["cl3_insignia_black", 5091],
+			["cl3_range_rover_black", 6400],
+			["cl3_taurus_black", 5440]
 		];
 	};
 	
@@ -69,15 +69,15 @@ switch (_shop) do
 			["exxpensive_chrysler_300c_base",10000],
 			["exxpensive_Audi_q7_base",11560],
 			["cl3_e63_amg_black", 30000],
-			["cl3_dbs_volante_yellow", 44000],
+			["cl3_dbs_volante_black", 44000],
 			["exxpensive_porsche_panamera_base",56000],
 			["exxpensive_mercedes_sls_base",60000],
 			["exxpensive_jaguar_base",62000],
-			["cl3_carrera_gt_babyblue", 76000],
-			["cl3_458_flame", 96000],			
-			// ["cl3_r8_spyder_2tone2", 450000],			
+			["cl3_carrera_gt_black", 76000],
+			["cl3_458_black", 96000],			
+			["cl3_r8_spyder_black", 450000],			
 			["cl3_murcielago_black", 120000],
-			["cl3_reventon_white", 142000],
+			["cl3_reventon_black", 142000],
 			["exxpensive_bugatti_base",200000]
 		];
 	};

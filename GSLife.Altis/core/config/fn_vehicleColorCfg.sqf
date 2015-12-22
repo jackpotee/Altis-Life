@@ -342,18 +342,24 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
-	case "cl3_e63_amg_black":	
-	case "cl3_dbs_volante_yellow":
-	case "cl3_carrera_gt_babyblue":
-	case "cl3_458_flame":	
-	case "cl3_r8_spyder_2tone2":	
-	case "cl3_murcielago_black":	
-	case "cl3_reventon_white":		
+
+	case "cl3_golf_mk2_black";
+	case "cl3_civic_vti_black";
+	case "cl3_insignia_black";
+	case "cl3_range_rover_black";
+	case "cl3_taurus_black";	
+	case "cl3_e63_amg_black";	
+	case "cl3_dbs_volante_black";
+	case "cl3_carrera_gt_black";
+	case "cl3_458_black";
+	case "cl3_r8_spyder_black";	
+	case "cl3_murcielago_black";	
+	case "cl3_reventon_black":		
 	{
 	_ret = 
 		[
-			["\cl3_vehiclefunctions\skins\skin_yellow_co.paa","civ"],
 			["\cl3_vehiclefunctions\skins\skin_black_co.paa","civ"],
+			["\cl3_vehiclefunctions\skins\skin_yellow_co.paa","civ"],
 			["\cl3_vehiclefunctions\skins\skin_blue_co.paa","civ"],
 			["\cl3_vehiclefunctions\skins\red_co.paa","civ"],
 			["\cl3_vehiclefunctions\skins\green_co.paa","civ"],
@@ -364,6 +370,7 @@ switch (_vehicle) do
 			["\cl3_vehiclefunctions\skins\skin_white_co.paa","civ"]
 		];
 	};
+	
 	case "exxpensive_Audi_q7_base":
 	{
 	_ret = 
