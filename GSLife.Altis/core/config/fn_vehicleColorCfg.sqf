@@ -342,7 +342,22 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
-
+	
+	case "exxpensive_Audi_q7_base":
+	{
+	_ret = 
+		[
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,1,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.301961,0.6,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	/*
 	case "cl3_golf_mk2_black";
 	case "cl3_civic_vti_black";
 	case "cl3_insignia_black";
@@ -371,22 +386,9 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "exxpensive_Audi_q7_base":
-	{
-	_ret = 
-		[
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,1,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.301961,0.6,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
-		];
-	};
+
 	
-	case "SAL_AudiCiv":
+	case "SAL_Audi_A":
 	{
 	_ret = 
 		[
@@ -395,7 +397,7 @@ switch (_vehicle) do
 			["SAL_A4\Data\Body_coBlack.paa","civ"]
 
 		];
-	};	
+	};	*/
 };
 
 _ret;

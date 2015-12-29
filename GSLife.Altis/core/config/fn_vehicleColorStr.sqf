@@ -359,7 +359,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	
+	/*
 	case "cl3_golf_mk2_black";
 	case "cl3_civic_vti_black";
 	case "cl3_insignia_black";
@@ -375,20 +375,21 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "noir"};
-			case 1: {_color = "jaune"};
-			case 2: {_color = "bleu"};
-			case 3: {_color = "rouge"};
-			case 4: {_color = "vert"};
-			case 5: {_color = "gris"};
-			case 6: {_color = "orange"};
-			case 7: {_color = "violet"};
-			case 8: {_color = "silver"};
-			case 9: {_color = "blanc"};
+
+			case 0: {_color = "noir";};
+			case 1: {_color = "jaune";};
+			case 2: {_color = "bleu";};
+			case 3: {_color = "rouge";};
+			case 4: {_color = "vert";};
+			case 5: {_color = "gris";};
+			case 6: {_color = "orange";};
+			case 7: {_color = "violet";};
+			case 8: {_color = "silver";};
+			case 9: {_color = "blanc";};
 		};
 	};
 	
-	case "SAL_AudiCiv":
+	case "SAL_Audi_A":
 	{
 		switch (_index) do
 		{
@@ -396,7 +397,7 @@ switch (_vehicle) do
 			case 1: {_color = "silver"};
 			case 2: {_color = "noir"};
 		};
-	};	
+	};	*/
 	
 	
 	case "exxpensive_Audi_q7_base":

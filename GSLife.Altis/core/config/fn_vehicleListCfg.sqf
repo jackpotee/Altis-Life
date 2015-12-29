@@ -48,17 +48,31 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",500],
 			["exxpensive_2cv_base",700],
-			["cl3_lada", 800],
-			["cl3_lada", 800],
+			["cl3_lada_red",800],
 			["LandRover_TK_CIV_EP1",1500],	
+			["cl3_golf_mk2_blue", 2400],
 			["cl3_golf_mk2_black", 2400],
+			["cl3_golf_mk2_yellow", 2400],
+			["cl3_golf_mk2_white", 2400],
+			["cl3_golf_mk2_red", 2400],
+			["cl3_civic_vti_red", 2750],
 			["cl3_civic_vti_black", 2750],
+			["cl3_civic_vti_white", 2750],
 			["exxpensive_m5_e34_base",3600],
 			["exxpensive_BMWM3E46_base",4000],
-			["SAL_AudiCiv", 4400],
+			
+			["SAL_AudiCivRed", 4400],
+			["SAL_AudiCivSilver", 4400],
+			["SAL_AudiCivBlack", 4400],
+			["cl3_insignia_white", 5091],
 			["cl3_insignia_black", 5091],
+			["cl3_insignia_silver", 5091],
 			["cl3_range_rover_black", 6400],
-			["cl3_taurus_black", 5440]
+			["cl3_range_rover_white", 6400],
+			["cl3_taurus_black", 5440],
+			["cl3_taurus_yellow", 5440],
+			["cl3_taurus_orange", 5440],
+			["cl3_taurus_white", 5440]
 		];
 	};
 	
@@ -68,16 +82,48 @@ switch (_shop) do
 		[
 			["exxpensive_chrysler_300c_base",10000],
 			["exxpensive_Audi_q7_base",11560],
-			["cl3_e63_amg_black", 30000],
+			["cl3_e63_amg_black",30000],
+			["cl3_e63_amg_red", 30000],
+			["cl3_e63_amg_white", 30000],
+			["cl3_e63_amg_silver", 30000],
+			["cl3_dbs_volante_burgundy", 44000],
+			["cl3_dbs_volante_red", 44000],
+			["cl3_dbs_volante_white", 44000],
 			["cl3_dbs_volante_black", 44000],
 			["exxpensive_porsche_panamera_base",56000],
 			["exxpensive_mercedes_sls_base",60000],
 			["exxpensive_jaguar_base",62000],
+			["cl3_carrera_gt_babyblue", 76000],
+			["cl3_carrera_gt_white", 76000],
+			["cl3_carrera_gt_orange", 76000],
 			["cl3_carrera_gt_black", 76000],
-			["cl3_458_black", 96000],			
-			["cl3_r8_spyder_black", 450000],			
+			["cl3_carrera_gt_red", 76000],
+			["cl3_458_flame", 96000],
+			["cl3_458_yellow", 96000],
+			["cl3_458_red", 96000],
+			["cl3_458_black", 96000],
+			["cl3_458_white", 96000],
+			["cl3_458_silver", 96000],			
+			["cl3_r8_spyder_black", 450000],
+			["cl3_r8_spyder_grey", 450000],
+			["cl3_r8_spyder_light_blue", 450000],
+			["cl3_r8_spyder_purple", 450000],
+		    ["cl3_r8_spyder_red", 450000],
+			["cl3_r8_spyder_white", 450000],
+			["cl3_r8_spyder_yellow", 450000],			
 			["cl3_murcielago_black", 120000],
-			["cl3_reventon_black", 142000],
+			["cl3_murcielago_blue", 120000],
+			["cl3_murcielago_orange", 120000],
+			["cl3_murcielago_red", 120000],
+			["cl3_murcielago_white", 120000],
+			["cl3_murcielago_yellow", 120000],
+			["cl3_reventon_white", 142000],
+			["cl3_reventon_green", 142000],
+		    ["cl3_reventon_light_blue", 142000],
+			["cl3_reventon_light_yellow", 142000],
+			["cl3_reventon_lime", 142000],
+			["cl3_reventon_orange", 142000],
+		    ["cl3_reventon_red", 142000],
 			["exxpensive_bugatti_base",200000]
 		];
 	};
@@ -101,6 +147,9 @@ switch (_shop) do
 	
 	case "reb_car":
 	{
+		if(license_civ_rebel) then
+		{
+	
 		_return =
 		[
 			["B_Quadbike_01_F",2500],
@@ -120,8 +169,7 @@ switch (_shop) do
 			
 		];
 		
-		if(license_civ_rebel) then
-		{
+
 			
 		};
 	};

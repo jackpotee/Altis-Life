@@ -217,13 +217,12 @@ switch(_shop) do
 			["RH_m4",nil,2500],
 			["RH_M4_ris",nil,2500],
 			["RH_M4_M203",nil,2500],
-			["RH_M4sbr",nil,2500],
 			
 			//SILENCIEUX
 			["RH_qdss_nt4",nil,2500],
 			["RH_saker",nil,2500],
-			["RH_qdss_nt4b",nil,2500],
-			["RH_sakerb",nil,2500],
+			//["RH_qdss_nt4b",nil,2500],
+			//["RH_sakerb",nil,2500],
 			["RH_spr_mbs",nil,2500],
 			//////////
 			
@@ -291,6 +290,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
 						["NVGoggles",nil,1200],
+						["U_Rangemaster",nil,1200],
 						["B_FieldPack_ocamo",nil,3000]
 					]
 				];
