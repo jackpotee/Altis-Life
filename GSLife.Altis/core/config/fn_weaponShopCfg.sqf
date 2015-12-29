@@ -27,80 +27,83 @@ switch(_shop) do
 		[
 			["DDOPP_X26","Taser",450],
 			["DDOPP_1Rnd_X26",nil,50],
-			["RH_m9",nil,7000],
-			["RH_15Rnd_9x19_M9",nil,60],
 			["RH_python",nil,7000],
 			["RH_6Rnd_357_Mag",nil,60],
 			["RH_g17",nil,7000],
-			["RH_17Rnd_9x19_g17",nil,60],			
-			["RH_kimber_nw",nil,7000],
-			["RH_7Rnd_45cal_m1911",nil,60],				
-			
-			["SMG_02_F",nil,7000],
-			["30Rnd_9x21_Mag",nil,60],
-			["RH_hb_b",nil,10000],
-			["RH_30Rnd_762x35_FMJ",nil,60],
-			["hlc_rifle_RU556",nil,10000],
-			["hlc_rifle_bcmjack",nil,10000],
-			["hlc_30rnd_556x45_EPR",nil,75],
-			["R3F_M4S90",nil,25000],
-			["R3F_7Rnd_M4S90",nil,100],
-			["hlc_rifle_Colt727",nil,25000],
-			["30Rnd_556x45_Stanag",nil,100],
-			["RH_M16A6",nil,10000],
-			["RH_30Rnd_68x43_FMJ",nil,250],
-			["RH_M27IAR",nil,10000],
-			["RH_60Rnd_556x45_M855A1",nil,250],
-			["RH_M4m_b",nil,10000],	
-			["RH_M4_moe_b",nil,25000],
-			["RH_M4sbr_b",nil,25000],	
+			["RH_17Rnd_9x19_g17",nil,60],	
 			["RH_M16A4",nil,10000],
-			["RH_30Rnd_556x45_M855A1",nil,250],
-			["R3F_HK416M",nil,10000],
-			["R3F_30Rnd_556x45_HK416",nil,250]		
-			
+			["RH_30Rnd_556x45_M855A1",nil,250]
 		];		
 		
+		if (__GETC__(life_coplevel) >= 2) then {   //Caporal
+			_content pushBack ["R3F_M4S90",nil,25000];
+			_content pushBack ["R3F_7Rnd_M4S90",nil,100];
+			_content pushBack ["hlc_rifle_Colt727",nil,25000];
+			_content pushBack ["30Rnd_556x45_Stanag",nil,100];
+		};
 		
-		if (__GETC__(life_coplevel) >= 2) then {   //major
-			_content pushBack ["RH_mp412",nil,30000];
-			_content pushBack ["RH_6Rnd_357_Mag",nil,30];
-			_content pushBack ["R3F_Minimi_HG",nil,100000];
-			_content pushBack ["R3F_Minimi_762_HG",nil,300];
+		if (__GETC__(life_coplevel) >= 3) then {   // Sergent
 			_content pushBack ["R3F_FRF2",nil,100000];
 			_content pushBack ["R3F_10Rnd_762x51_FRF2",nil,60];
+			_content pushBack ["RH_M4sbr_b",nil,25000];
+			_content pushBack ["RH_M16A6",nil,10000];
+			_content pushBack ["RH_30Rnd_68x43_FMJ",nil,250];
 		};
 		
-		if (__GETC__(life_coplevel) >= 3) then {   // lieut
-			_content pushBack ["R3F_Minimi_762",nil,30000];
-			_content pushBack ["R3F_100Rnd_762x51_MINIMI",nil,30];
-
-		};
-		
-		if (__GETC__(life_coplevel) >= 4) then {   //capitaine
+		if (__GETC__(life_coplevel) >= 4) then {   //Sergent chef
+			_content pushBack ["RH_m9",nil,7000];
+			_content pushBack ["RH_15Rnd_9x19_M9",nil,60];
+			_content pushBack ["R3F_HK416M",nil,10000];
+			_content pushBack ["R3F_30Rnd_556x45_HK416",nil,250];	
 			_content pushBack ["RH_m110",nil,30000];
 			_content pushBack ["RH_20Rnd_762x51_M80A1",nil,30];
-
 		};
 		
-		if (__GETC__(life_coplevel) >= 5) then {   //commandant
-			_content pushBack ["RH_bull",nil,100000];
-			_content pushBack ["RH_6Rnd_454_Mag",nil,60];		
+		if (__GETC__(life_coplevel) >= 5) then {   //major
+			_content pushBack ["R3F_Minimi_762",nil,30000];
+			_content pushBack ["R3F_100Rnd_762x51_MINIMI",nil,30];
+			_content pushBack ["R3F_Minimi_HG",nil,100000];
+			_content pushBack ["R3F_Minimi_762_HG",nil,300];
+			_content pushBack ["RH_M27IAR",nil,10000];
+			_content pushBack ["RH_60Rnd_556x45_M855A1",nil,250];
+			_content pushBack ["RH_kimber_nw",nil,7000];
+			_content pushBack ["RH_7Rnd_45cal_m1911",nil,60];	
+			
+		};
+		if (__GETC__(life_coplevel) >= 6) then {   //Lieutenant
+			_content pushBack ["RH_mp412",nil,30000];
+			_content pushBack ["RH_6Rnd_357_Mag",nil,30];
+			_content pushBack ["RH_M4m_b",nil,10000];
+			_content pushBack ["RH_30Rnd_68x43_FMJ",nil,250];
+		};
+		
+		if (__GETC__(life_coplevel) >= 7) then {   //capitaine
 			_content pushBack ["R3F_M107",nil,30000];
 			_content pushBack ["R3F_10Rnd_127x99_M107",nil,30];
+			_content pushBack ["hlc_rifle_RU556",nil,10000];
+			_content pushBack ["hlc_rifle_bcmjack",nil,10000];
+			_content pushBack ["hlc_30rnd_556x45_EPR",nil,75];
+			_content pushBack ["R3F_HK417L",nil,100000];
+			_content pushBack ["R3F_20Rnd_762x51_HK417",nil,300];
 			_content pushBack ["R3F_TAC50",nil,100000];
 			_content pushBack ["R3F_5Rnd_127x99_TAC50",nil,300];
 		};
-		if (__GETC__(life_coplevel) >= 6) then {   //colonel
-			_content pushBack ["RH_Deagles",nil,100000];
-			_content pushBack ["RH_7Rnd_50_AE",nil,60];		
+		if (__GETC__(life_coplevel) >= 8) then {   //commandant
+			_content pushBack ["RH_hb_b",nil,10000];
+			_content pushBack ["RH_30Rnd_762x35_FMJ",nil,60];
+			_content pushBack ["RH_bull",nil,100000];
+			_content pushBack ["RH_6Rnd_454_Mag",nil,60];		
 			_content pushBack ["R3F_PGM_Hecate_II",nil,30000];
 			_content pushBack ["R3F_7Rnd_127x99_PGM",nil,30];
-			_content pushBack ["R3F_HK417L",nil,100000];
-			_content pushBack ["R3F_20Rnd_762x51_HK417",nil,300];
 		};
-		
-		if (__GETC__(life_coplevel) >= 7) then {   //général
+		if (__GETC__(life_coplevel) >= 9) then {   //Colonel
+			_content pushBack ["RH_M4_moe_b",nil,25000];
+			_content pushBack ["RH_Deagles",nil,100000];
+			_content pushBack ["RH_7Rnd_50_AE",nil,60];	
+			_content pushBack ["SMG_02_F",nil,7000];
+			_content pushBack ["30Rnd_9x21_Mag",nil,60];
+		};
+		if (__GETC__(life_coplevel) >= 10) then {   //général
 			_content pushBack ["RH_Deagleg",nil,100000];
 			_content pushBack ["RH_7Rnd_50_AE",nil,60];		
 		};
@@ -130,7 +133,7 @@ switch(_shop) do
 			["acc_pointer_IR",nil,200]
 
 		];
-		["Armurerie Gendarmerie acc", _content];
+		["Armurerie Gendarmerie access", _content];
 	};	
 
 	case "rebel":

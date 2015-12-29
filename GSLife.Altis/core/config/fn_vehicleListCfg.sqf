@@ -47,18 +47,26 @@ switch (_shop) do
 		_return = 
 		[
 			["B_Quadbike_01_F",500],
+			
+			/*
 			["exxpensive_2cv_base",700],
-			["cl3_lada", 800],
-			["cl3_lada", 800],
+			["cl3_lada",800],
 			["LandRover_TK_CIV_EP1",1500],	
-			["cl3_golf_mk2_black", 2400],
-			["cl3_civic_vti_black", 2750],
+			["cl3_golf_mk2_black",2400],
+			["cl3_civic_vti_black",2750],
 			["exxpensive_m5_e34_base",3600],
 			["exxpensive_BMWM3E46_base",4000],
-			["SAL_AudiCiv", 4400],
-			["cl3_insignia_black", 5091],
-			["cl3_range_rover_black", 6400],
-			["cl3_taurus_black", 5440]
+			["SAL_AudiCiv",4400],
+			["cl3_insignia_black",5091],
+			["cl3_range_rover_black",6400],
+			["cl3_taurus_black",5440]*/
+			
+			["Mrshounka_207_noir",2750],
+			["Mrshounka_207_bleufonce",2750],
+			["Mrshounka_207_rouge",2750],
+			["Mrshounka_207_jaune",2750],
+			["Mrshounka_207_rose",2750],
+			["Mrshounka_207_orange",2750]
 		];
 	};
 	
@@ -68,16 +76,16 @@ switch (_shop) do
 		[
 			["exxpensive_chrysler_300c_base",10000],
 			["exxpensive_Audi_q7_base",11560],
-			["cl3_e63_amg_black", 30000],
-			["cl3_dbs_volante_black", 44000],
+			["cl3_e63_amg_black",30000],
+			["cl3_dbs_volante_black",44000],
 			["exxpensive_porsche_panamera_base",56000],
 			["exxpensive_mercedes_sls_base",60000],
 			["exxpensive_jaguar_base",62000],
-			["cl3_carrera_gt_black", 76000],
-			["cl3_458_black", 96000],			
-			["cl3_r8_spyder_black", 450000],			
-			["cl3_murcielago_black", 120000],
-			["cl3_reventon_black", 142000],
+			["cl3_carrera_gt_black",76000],
+			["cl3_458_black",96000],			
+			["cl3_r8_spyder_black",450000],			
+			["cl3_murcielago_black",120000],
+			["cl3_reventon_black",142000],
 			["exxpensive_bugatti_base",200000]
 		];
 	};
@@ -108,18 +116,13 @@ switch (_shop) do
 			["I_MRAP_03_F",210000],
 			["B_Heli_Light_01_F",325000],
 			["I_Heli_Transport_02_F",1000000],
-			
-			
 			["shounka_clk_noir",600000],
 			["Mrshounka_Alfa_Romeo_civ",2125000],
 			["Mrshounka_bmwm6_civ",750000],
 			["shounka_a3_rs5_civ",600000],
 			["Mrshounka_cayenne_p_noir",2125000],
 			["shounka_porsche911",750000]
-			
-			
 		];
-		
 		if(license_civ_rebel) then
 		{
 			
@@ -138,7 +141,6 @@ switch (_shop) do
 		["cl3_reventon_clpd",67500];
 		_return pushBack
 		["Exxpensive_dodge_charger_police",67500];
-		
 		_return pushBack
 		["DAR_ExplorerPolBase",20000];
 		_return pushBack
