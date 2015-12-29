@@ -72,7 +72,13 @@ switch (_shop) do
 			["cl3_taurus_black", 5440],
 			["cl3_taurus_yellow", 5440],
 			["cl3_taurus_orange", 5440],
-			["cl3_taurus_white", 5440]
+			["cl3_taurus_white", 5440],
+			["Mrshounka_207_noir",2750],
+			["Mrshounka_207_bleufonce",2750],
+			["Mrshounka_207_rouge",2750],
+			["Mrshounka_207_jaune",2750],
+			["Mrshounka_207_rose",2750],
+			["Mrshounka_207_orange",2750]
 		];
 	};
 	
