@@ -166,11 +166,35 @@ switch (_shop) do
 			
 			
 			["shounka_clk_noir",600000],
-			["Mrshounka_Alfa_Romeo_civ",2125000],
-			["Mrshounka_bmwm6_civ",750000],
-			["shounka_a3_rs5_civ",600000],
-			["Mrshounka_cayenne_p_noir",2125000],
-			["shounka_porsche911",750000]
+			["shounka_clk_bleufonce",2125000],
+			["shounka_clk_rouge",750000],
+			["shounka_clk_grise",600000],
+			["shounka_clk_orange",2125000],
+			
+			
+			["Mrshounka_Alfa_Romeo_noir",600000],
+			["Mrshounka_Alfa_Romeo_bleufonce",2125000],
+			["Mrshounka_Alfa_Romeo_rouge",750000],
+			["Mrshounka_Alfa_Romeo_rose",600000],
+			["Mrshounka_Alfa_Romeo_orange",2125000],
+			
+			["Mrshounka_bmwm6_noir",600000],
+			["Mrshounka_bmwm6_bleufonce",2125000],
+			["Mrshounka_bmwm6_rouge",750000],
+			["Mrshounka_bmwm6_rose",600000],
+			["Mrshounka_bmwm6_orange",2125000],
+			
+			["shounka_a3_rs5_civ_noir",600000],
+			["shounka_a3_rs5_civ_bleufonce",2125000],
+			["shounka_a3_rs5_civ_rouge",750000],
+			["shounka_a3_rs5_civ_rose",600000],
+			["shounka_a3_rs5_civ_orange",2125000],
+			
+			["Mrshounka_cayenne_p_noir",600000],
+			["shounka_porsche911_bleufonce",2125000],
+			["shounka_porsche911_rouge",750000],
+			["shounka_porsche911_rose",600000],
+			["shounka_porsche911_orange",2125000]
 			
 			
 		];
