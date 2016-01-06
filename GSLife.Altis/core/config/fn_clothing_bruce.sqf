@@ -29,9 +29,26 @@ switch (_filter) do
 		["U_IG_Guerilla3_1","Brown Jacket & Pants",75],
 		["U_IG_Guerilla2_3","The Outback Rangler",120],
 		["U_C_HunterBody_grn","The Hunters Look",150],
-		["U_C_WorkerCoveralls","Mechanic Coveralls",250],
+		["U_C_WorkerCoveralls","Mechanic Coveralls",150],
 		["U_OrestesBody","Surfing On Land",110],
-		["U_C_Journalist",nil,85]
+		["U_C_Journalist",nil,85],
+		["A3L_Suit_Uniform",nil,400],
+		["A3L_Bikini_Girl",nil,150],
+		["A3L_Dude_Outfit",nil,250],
+		["A3L_Farmer_Outfit",nil,50],
+		["A3L_Priest_Uniform",nil,50],
+		["A3L_Prisoner_Outfit",nil,30],
+		["A3L_Worker_Outfit",nil,50],
+		["U_C_Polo_Barcelona",nil,120],
+		["U_C_Polo_Toulouse",nil,100],
+		["U_C_Polo_Civil1",nil,85],
+		["fbi_light_uniform",nil,85],
+		["fbi_light2_uniform",nil,85],
+		["fbi_light3_uniform",nil,85],
+		["fbi_light4_uniform",nil,85],
+		["U_PMC_RedPlaidShirt_DenimCords",nil,85],
+		["U_PMC_BluePlaidShirt_BeigeCords",nil,85],
+		["U_007_BIS_Marshall",nil,85]
 		];
 	};
 	

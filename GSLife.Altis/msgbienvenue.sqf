@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: welcomecredits.sqf
 	Author: Twikii
 	Date: 04-18-2014
@@ -7,7 +7,7 @@
 */
 
 private ["_welcomeMessage","_finalText","_memberFunction","_memberNames","_rolepos","_roledir","_pos","_onScreenTime","_role1","_role1names","_role2","_role2names","_role3","_role3names","_role4","_role4names","_role5","_role5names"];
-_welcomeMessage = format["Bienvenue sur FunForAltisLife %1 !",format["%1", name player]];
+_welcomeMessage = format["Bienvenue sur le serveur AltisLife de la GhostSquad-Multigaming %1 !",format["%1", name player]];
 
 waitUntil { alive player };
 
@@ -29,14 +29,14 @@ sleep 3; //Wait in seconds before the credits start after player is in-game
  
 _role1 = "Serveur GhostSquad Life";
 _role1names = ["Altis Life est un mode Roleplay basé sur la simulation d'une vie. N'oubliez pas, ce n'est qu'un jeu !"];
-_role2 = "Site/Forum";
-_role2names = ["Bientôt"];
-_role3 = "IP TeamSpeak";
-_role3names = ["92.90.221.89"];
+_role2 = "Forum";
+_role2names = ["https://www.ghostsquad-multigaming.fr/phpBB3/"];
+_role3 = "Adresse du TeamSpeak";
+_role3names = ["altislife.ghostsquad-multigaming.fr"];
 _role4 = "Principales règles";
-_role4names = ["Pas de troll, Pas de freekill, Pas de Car-kill, Respectez les autres joueurs, Pas d'insultes et surtout jouer RP !"];
+_role4names = ["Pas de troll. Pas de freekill. Pas de Car-kill. Respectez les autres joueurs. Pas d'insultes et surtout jouer RP !"];
 _role5 = "Merci de lire";
-_role5names = ["Consultez les règles sur le forum. Faites des sommations, restez dans un contexte RP, aucun freekill ne sera toleré. Bon jeu à tous !"];
+_role5names = ["Consultez les règles sur le forum. Faites des sommations. Restez dans un contexte RP. Aucun freekill ne sera toleré. Bon jeu à tous !"];
 
 {
 sleep 2;

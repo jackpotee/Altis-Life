@@ -5,7 +5,7 @@
 
 if(playerSide == west) then
 {
- if ((__GETC__(life_coplevel) >= 1) && (uniform player == "U_Rangemaster")) then {
+ /*if ((__GETC__(life_coplevel) >= 1) && (uniform player == "U_Rangemaster")) then {
  player setObjectTextureGlobal[0,"textures\uniform_recrue.jpg"];
  };
  
@@ -30,7 +30,7 @@ if(playerSide == west) then
  };
  
  if ((__GETC__(life_coplevel) >= 1) && (uniform player == "U_B_CombatUniform_mcam")) then {
- player setObjectTextureGlobal[0,"textures\uniform_general.jpg"];
+ player setObjectTextureGlobal[0,"textures\uniform_general.jpg"];*/
  };
  
 };

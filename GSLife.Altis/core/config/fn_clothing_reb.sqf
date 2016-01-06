@@ -18,23 +18,30 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_IG_Guerilla1_1",nil,1000],
-			["U_IG_Guerilla2_1",nil,1250],
-			["U_I_G_Story_Protagonist_F",nil,1500],
-			["U_I_G_resistanceLeader_F",nil,2500],
-			["U_O_SpecopsUniform_ocamo",nil,4500],
-			["U_IG_leader","Guerilla Leader",7340],
-			["U_B_CTRG_1",nil,3500],
-			["U_B_CTRG_2",nil,3500],
-			["U_B_CTRG_3",nil,3500],
-			["U_B_survival_uniform",nil,3650],
-			["U_MillerBody",nil,3800],
-			["U_I_CombatUniform",nil,3700],
-			["U_I_CombatUniform_tshirt",nil,3750],
-			["U_IG_Guerilla1_1",nil,5000],
-			["U_I_GhillieSuit",nil,10000],
-			["U_O_GhillieSuit",nil,10000],
-			["U_O_PilotCoveralls",nil,20000]
+			["A3L_Suit_Uniform",nil,400],
+			["U_PMC_CombatUniformRS_SSGPBB",nil,150],
+			["U_PMC_CombatUniformRS_SSBPBB",nil,150],
+			["U_PMC_CombatUniformRS_IndPBSBB",nil,150],
+			["U_PMC_CombatUniformRS_GSSPBB",nil,150],
+			["U_PMC_CombatUniformRS_GSBPBB",nil,150],
+			["U_PMC_CombatUniformRS_BSSPSB",nil,150],
+			["U_PMC_CombatUniformRS_BSSPBB",nil,150],
+			["U_PMC_CombatUniformRS_ChckP_BPBB",nil,150],
+			["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,150],
+			["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,150],
+			["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,150],
+			["U_PMC_CombatUniformRS_SSGPSB",nil,150],
+			["U_PMC_CombatUniformRS_BSGPBB",nil,150],
+			["U_PMC_IndUniformLS_YSBPBB",nil,150],
+			["U_PMC_IndUniformLS_GSBPBB",nil,150],
+			["U_PMC_IndUniformLS_BSYPTB",nil,150],
+			["U_PMC_IndUniformLS_TSBPTB",nil,150],
+			["U_PMC_IndUniformLS_BSTPTB",nil,150],
+			["U_PMC_IndUniformLS_GSTPTB",nil,150],
+			["U_PMC_IndUniformLS_TSTPTB",nil,150],
+			["U_PMC_IndUniformLS_BSBPBB",nil,150],
+			["U_PMC_IndUniformRS_TSBPTB",nil,150],
+			["U_O_PilotCoveralls",nil,150]
 			
 		];
 	};
@@ -43,18 +50,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_ShemagOpen_tan",nil,850],
-			["H_Shemag_olive",nil,850],
-			["H_ShemagOpen_khk",nil,800],
-			["H_Shemag_khk",nil,800],
-			["H_Beret_blk",nil,800],
-			["H_Watchcap_blk",nil,900],
-			["H_Watchcap_khk",nil,900],
-			["H_Watchcap_camo",nil,900],
-			["H_HelmetO_ocamo",nil,2500],
-			["H_MilCap_oucamo",nil,1200],
-			["H_Bandanna_camo",nil,650],
-			["H_PilotHelmetFighter_O",nil,15000]
+			["R3F_Bonnet",nil,30],
+			["H_Booniehat_rgr",nil,35],
+			["Kio_Capital_Hat",nil,50]
 		];
 	};
 	
@@ -81,7 +79,13 @@ switch (_filter) do
 			["G_Lady_Dark",nil,150],
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55]
+			["G_Combat",nil,55],
+			["Masque_Wolfv2",nil,55],
+			["Masque_Unic",nil,55],
+			["Masque_Lion",nil,55],
+			["Masque_Hockey",nil,55],
+			["Masque_Anonymous",nil,55]
+
 		];
 	};
 	
@@ -89,16 +93,10 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_Rangemaster_belt",nil,1500],
-			["V_BandollierB_khk",nil,1500],
-			["V_BandollierB_blk",nil,1500],
-			["V_BandollierB_oli",nil,1500],
-			["V_BandollierB_cbr",nil,1500],
-			["V_TacVest_khk",nil,2500],
-			["V_TacVest_blk",nil,2500],
-			["V_TacVest_camo",nil,2500],
-			["V_HarnessO_brn",nil,7500],
-			["V_HarnessOGL_gry","Veste Explosive",350000]
+			["V_PlateCarrier1_PMC_coyote",nil,150],
+			["V_PlateCarrier1_PMC_rgr",nil,150],
+			["V_PlateCarrier1_PMC_khki",nil,150],
+			["V_PlateCarrier1_PMC_blk",nil,150]
 		];
 	};
 	
@@ -106,17 +104,17 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr",nil,2500],
-			["B_Kitbag_mcamo",nil,4500],
-			["B_TacticalPack_oli",nil,3500],
-			["B_FieldPack_ocamo",nil,3000],
-			["B_Bergen_sgg",nil,4500],
-			["B_Kitbag_cbr",nil,4500],
-			["B_Carryall_oli",nil,5000],
-			["B_Carryall_ocamo",nil,5000],
-			["B_Carryall_oucamo",nil,5000],
-			["B_Carryall_khk",nil,5000],
-			["B_Parachute","Parachute",5000]
+			["B_AssaultPack_cbr",nil,250],
+			["B_Kitbag_mcamo",nil,450],
+			["B_TacticalPack_oli",nil,350],
+			["B_FieldPack_ocamo",nil,300],
+			["B_Bergen_sgg",nil,450],
+			["B_Kitbag_cbr",nil,450],
+			["B_Carryall_oli",nil,500],
+			["B_Carryall_ocamo",nil,500],
+			["B_Carryall_oucamo",nil,500],
+			["B_Carryall_khk",nil,500],
+			["B_Parachute","Parachute",500]
 		];
 	};
 };

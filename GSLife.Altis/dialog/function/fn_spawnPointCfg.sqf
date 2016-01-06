@@ -17,6 +17,7 @@ switch (_side) do
 	case west:
 	{
 		_return = [
+			["cop_spawn_3","QG Central","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_1","QG Altis Market","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_2","QG Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
